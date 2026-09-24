@@ -14,6 +14,18 @@
       ]
     },
     {
+      "id": "multiplayer-park",
+      "kind": "note",
+      "title": "Friends in the same park",
+      "date": "Available now",
+      "featured": false,
+      "summary": "Open Play on two browsers or devices and join the park \u2014 you can see each other hop around.",
+      "body": [
+        "Name your capybara, then join the park. Anyone else on the site at the same time shows up as a friend nearby.",
+        "If the lobby cannot be reached, the game still works solo."
+      ]
+    },
+    {
       "id": "name-your-capybara",
       "kind": "note",
       "title": "Name your capybara",

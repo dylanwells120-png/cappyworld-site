@@ -1,0 +1,7 @@
+name = "cappyworld"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+[[kv_namespaces]]
+binding = "ROOM"
+id = "f673840a9c38448fbb22003d6b2f64b4"
