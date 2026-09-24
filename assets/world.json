@@ -1,0 +1,144 @@
+{
+  "clothing": [
+    {"id": "hat", "label": "Sun hat", "file": "hat.glb", "spot": [-7.4, 3.2], "lift": 0.0, "place": "yard"},
+    {"id": "scarf", "label": "Scarf", "file": "scarf.glb", "spot": [8.2, 10.2], "lift": 0.05, "place": "yard"},
+    {"id": "vest", "label": "Vest", "file": "vest.glb", "spot": [-13.0, 11.0], "lift": 0.04, "place": "yard"},
+    {"id": "boots", "label": "Rain boots", "file": "boot.glb", "spot": [13.0, -4.5], "lift": 0.0, "place": "yard"},
+    {"id": "witch", "label": "Witch hat", "file": "witch.glb", "spot": [-2.6, 222.4], "lift": 0.0, "place": "house"},
+    {"id": "cape", "label": "Cape", "file": "cape.glb", "spot": [2.8, 222.0], "lift": 0.04, "place": "house"},
+    {"id": "bow", "label": "Bat bow", "file": "bow.glb", "spot": [216.0, 4.0], "lift": 0.12, "place": "patch"},
+    {"id": "charm", "label": "Pumpkin charm", "file": "charm.glb", "spot": [228.0, -3.5], "lift": 0.06, "place": "patch"}
+  ],
+  "portals": [
+    {
+      "from": "park",
+      "level": "house",
+      "at": [0.0, 14.2],
+      "radius": 1.3,
+      "spawn": [0.0, 218.6],
+      "heading": 0,
+      "prompt": "Step into the haunted house"
+    },
+    {
+      "from": "house",
+      "level": "park",
+      "at": [0.0, 216.5],
+      "radius": 1.15,
+      "spawn": [0.0, 12.2],
+      "heading": 180,
+      "prompt": "Back to the park"
+    },
+    {
+      "from": "park",
+      "level": "patch",
+      "at": [17.6, 0.0],
+      "radius": 1.35,
+      "spawn": [209.2, 0.0],
+      "heading": -90,
+      "prompt": "Into the pumpkin patch"
+    },
+    {
+      "from": "patch",
+      "level": "park",
+      "at": [206.6, 0.0],
+      "radius": 1.2,
+      "spawn": [15.2, 0.0],
+      "heading": 90,
+      "prompt": "Back to the park"
+    }
+  ],
+  "levels": {
+    "park": {"origin": [0, 0], "half": [20, 16], "inset": 1.5, "cam_back": 4.6, "cam_up": 2.05, "fog": 0.012},
+    "house": {"origin": [0, 220], "half": [6.8, 4.8], "inset": 0.55, "cam_back": 2.7, "cam_up": 1.45, "fog": 0.03},
+    "patch": {"origin": [220, 0], "half": [15, 11], "inset": 1.3, "cam_back": 5.0, "cam_up": 2.35, "fog": 0.009}
+  },
+  "patch_field": {
+    "origin": [213, 0],
+    "cols": [0, 1, 2, 3, 4, 5],
+    "rows": [-2, -1, 0, 1, 2],
+    "spacing": [3.0, 2.5]
+  },
+  "dynamics": [
+    {"kind": "pumpkin", "at": [-2.2, 221.6], "z": 0.0, "level": "house"},
+    {"kind": "pumpkin", "at": [-2.2, 221.6], "z": 0.52, "level": "house"},
+    {"kind": "pumpkin", "at": [1.6, 219.4], "z": 0.0, "level": "house"},
+    {"kind": "pumpkin", "at": [3.9, 218.2], "z": 0.0, "level": "house"},
+    {"kind": "pumpkin", "at": [-3.4, 217.3], "z": 0.0, "level": "house"},
+    {"kind": "hay", "at": [219.0, -2.5], "z": 0.0, "level": "patch"},
+    {"kind": "hay", "at": [225.0, 2.5], "z": 0.0, "level": "patch"},
+    {"kind": "pumpkin", "at": [222.0, -5.0], "z": 0.0, "level": "patch"},
+    {"kind": "pumpkin", "at": [222.0, -5.0], "z": 0.52, "level": "patch"},
+    {"kind": "pumpkin", "at": [230.0, 1.2], "z": 0.0, "level": "patch"}
+  ],
+  "dress": [
+    {"file": "gate.glb", "at": [0.0, 14.45, 0.0], "h": 0, "level": "park"},
+    {"file": "gate.glb", "at": [17.85, 0.0, 0.0], "h": -90, "level": "park"},
+    {"file": "stone.glb", "at": [-1.8, 14.9, 0.0], "h": 12, "level": "park"},
+    {"file": "stone.glb", "at": [1.7, 14.85, 0.0], "h": -8, "level": "park"},
+    {"file": "pumpkin.glb", "at": [-1.15, 13.15, 0.0], "h": 20, "level": "park"},
+    {"file": "pumpkin.glb", "at": [1.2, 13.35, 0.0], "h": -15, "level": "park"},
+    {"file": "pumpkin.glb", "at": [16.3, 1.15, 0.0], "h": 40, "level": "park"},
+    {"file": "pumpkin.glb", "at": [16.5, -0.9, 0.0], "h": 10, "level": "park"},
+    {"file": "gate.glb", "at": [0.0, 215.45, 0.0], "h": 180, "s": 0.85, "level": "house"},
+    {"file": "manor_door.glb", "at": [0.0, 215.38, 0.0], "level": "house"},
+    {"file": "manor_ceiling.glb", "at": [0.0, 220.0, 2.24], "level": "house"},
+    {"file": "manor_rug.glb", "at": [0.0, 220.5, 0.0], "s": 1.2, "level": "house"},
+    {"file": "manor_chandelier.glb", "at": [0.0, 220.5, 1.71], "level": "house"},
+    {"file": "manor_fireplace.glb", "at": [0.0, 224.225, 0.0], "h": 180, "solid": [1.27, 0.5, 2.44], "level": "house"},
+    {"file": "manor_portrait_ghost.glb", "at": [0.0, 224.255, 1.34], "h": 180, "level": "house"},
+    {"file": "manor_clock.glb", "at": [-1.85, 224.56, 0.0], "h": 180, "solid": [0.29, 0.165, 2.32], "level": "house"},
+    {"file": "manor_armchair.glb", "at": [-3.95, 223.9, 0.0], "h": 200, "solid": [0.5, 0.48, 1.18], "level": "house"},
+    {"file": "manor_window_moon.glb", "at": [-5.4, 224.6, 0.25], "h": 180, "level": "house"},
+    {"file": "manor_bookshelf.glb", "at": [4.25, 224.49, 0.0], "h": 180, "solid": [0.81, 0.23, 2.29], "level": "house"},
+    {"file": "manor_potions.glb", "at": [2.35, 224.614, 1.25], "h": 180, "level": "house"},
+    {"file": "manor_lantern.glb", "at": [2.3, 224.3, 0.0], "h": 195, "pulse": true, "level": "house"},
+    {"file": "manor_bats.glb", "at": [3.1, 223.75, 1.46], "h": 200, "level": "house"},
+    {"file": "manor_cauldron.glb", "at": [5.25, 222.55, 0.0], "h": 230, "solid": [0.42, 0.42, 0.7], "level": "house"},
+    {"file": "manor_bubbles.glb", "at": [5.25, 222.55, 0.62], "bob": true, "level": "house"},
+    {"file": "manor_window.glb", "at": [6.6, 219.6, 0.25], "h": 90, "level": "house"},
+    {"file": "manor_lantern.glb", "at": [6.25, 216.95, 0.0], "h": 110, "pulse": true, "level": "house"},
+    {"file": "manor_toychest.glb", "at": [3.4, 215.6, 0.0], "solid": [0.75, 0.31, 0.45], "level": "house"},
+    {"file": "manor_coatrack.glb", "at": [6.28, 215.72, 0.0], "h": 45, "solid": [0.3, 0.3, 1.86], "level": "house"},
+    {"file": "manor_candles.glb", "at": [-2.1, 215.62, 0.0], "level": "house"},
+    {"file": "manor_candles.glb", "at": [2.1, 215.62, 0.0], "h": 90, "level": "house"},
+    {"file": "manor_portrait_pumpkin.glb", "at": [-3.4, 215.307, 1.2], "level": "house"},
+    {"file": "manor_lantern.glb", "at": [-6.2, 217.15, 0.0], "h": -70, "pulse": true, "level": "house"},
+    {"file": "manor_table.glb", "at": [-4.85, 218.3, 0.0], "h": 15, "solid": [0.6, 0.6, 0.8], "level": "house"},
+    {"file": "manor_ghost.glb", "at": [-5.6, 219.1, 0.35], "h": -135, "bob": true, "level": "house"},
+    {"file": "manor_bats.glb", "at": [-4.85, 218.3, 1.46], "h": 40, "level": "house"},
+    {"file": "manor_window.glb", "at": [-6.6, 220.3, 0.25], "h": -90, "level": "house"},
+    {"file": "manor_portrait_cat.glb", "at": [-6.693, 222.75, 1.2], "h": -90, "level": "house"},
+    {"file": "manor_cobweb.glb", "at": [-6.72, 224.72, 1.617], "h": 0, "level": "house"},
+    {"file": "manor_cobweb.glb", "at": [6.72, 224.72, 1.617], "h": -90, "level": "house"},
+    {"file": "manor_cobweb.glb", "at": [6.72, 215.28, 1.617], "h": 180, "level": "house"},
+    {"file": "manor_cobweb.glb", "at": [-6.72, 215.28, 1.617], "h": 90, "level": "house"},
+    {"file": "scarecrow.glb", "at": [222.0, 0.6, 0.0], "h": -20, "blocks": true, "block": 1.7, "level": "patch"},
+    {"file": "gate.glb", "at": [206.15, 0.0, 0.0], "h": 90, "s": 0.9, "level": "patch"},
+    {"file": "vine.glb", "at": [214.5, 6.2, 0.0], "h": 15, "level": "patch"},
+    {"file": "vine.glb", "at": [226.5, -6.4, 0.0], "h": -25, "level": "patch"},
+    {"file": "vine.glb", "at": [231.2, 5.4, 0.0], "h": 50, "level": "patch"},
+    {"file": "stone.glb", "at": [208.2, 6.5, 0.0], "h": 8, "level": "patch"},
+    {"file": "stone.glb", "at": [208.4, -6.2, 0.0], "h": -12, "level": "patch"}
+  ],
+  "web_park": [
+    {"file": "ground.glb", "at": [0, 0, 0], "h": 180},
+    {"file": "path.glb", "at": [0, 4, 0]},
+    {"file": "path.glb", "at": [0, 10, 0]},
+    {"file": "tree.glb", "at": [-12, 4, 0], "h": 15},
+    {"file": "tree.glb", "at": [14, 9, 0], "h": -25},
+    {"file": "tree.glb", "at": [-10, 14, 0], "h": 40}
+  ],
+  "web_toys": [
+    {"kind": "crate", "at": [3.5, 2.0], "z": 0.28, "level": "park"},
+    {"kind": "crate", "at": [3.5, 2.0], "z": 0.86, "level": "park"},
+    {"kind": "crate", "at": [-4.0, 1.8], "z": 0.28, "level": "park"},
+    {"kind": "crate", "at": [-4.0, 1.8], "z": 0.86, "level": "park"},
+    {"kind": "pot", "at": [1.5, -1.1], "z": 0.18, "level": "park"},
+    {"kind": "pot", "at": [-7.0, 5.5], "z": 0.18, "level": "park"}
+  ],
+  "lights": [
+    {"level": "house", "at": [0.0, 223.7, 0.6], "color": "#ff8a3a", "intensity": 12.0, "distance": 9.0, "flicker": true},
+    {"level": "house", "at": [0.0, 219.8, 1.95], "color": "#ffc27a", "intensity": 12.0, "distance": 11.0, "flicker": false},
+    {"level": "house", "at": [5.25, 222.4, 0.95], "color": "#7dff6a", "intensity": 4.5, "distance": 5.5, "flicker": true}
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "buildings": [
+    {
+      "id": "garden",
+      "label": "Garden beds",
+      "file": "village/v_garden.glb",
+      "footprint": [
+        3,
+        3
+      ],
+      "price": 80,
+      "limit": 2,
+      "income": {
+        "per_min": 1,
+        "cap_min": 20
+      }
+    },
+    {
+      "id": "cottage",
+      "label": "Cottage",
+      "file": "village/v_cottage.glb",
+      "footprint": [
+        4,
+        3
+      ],
+      "price": 150,
+      "limit": 1,
+      "income": {
+        "per_min": 2,
+        "cap_min": 30
+      },
+      "effects": {
+        "villager": "momo"
+      }
+    },
+    {
+      "id": "market",
+      "label": "Market stall",
+      "file": "village/v_market.glb",
+      "footprint": [
+        3,
+        2
+      ],
+      "price": 180,
+      "limit": 1,
+      "income": {
+        "per_min": 2.5,
+        "cap_min": 35
+      },
+      "effects": {
+        "villager": "juniper"
+      }
+    },
+    {
+      "id": "cafe",
+      "label": "Caf\u00e9",
+      "file": "village/v_cafe.glb",
+      "footprint": [
+        4,
+        4
+      ],
+      "price": 300,
+      "limit": 1,
+      "income": {
+        "per_min": 3,
+        "cap_min": 45
+      }
+    },
+    {
+      "id": "springs",
+      "label": "Hot spring",
+      "file": "village/v_bathhouse.glb",
+      "footprint": [
+        5,
+        4
+      ],
+      "price": 450,
+      "limit": 1,
+      "income": {
+        "per_min": 4,
+        "cap_min": 60
+      }
+    }
+  ]
+}

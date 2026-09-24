@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "items": [
+    {"id": "pebble", "label": "Smooth pebble"},
+    {"id": "carrot", "label": "Garden carrot"},
+    {"id": "spectacles", "label": "Lost spectacles"},
+    {"id": "parcel", "label": "Sealed parcel"},
+    {"id": "planks", "label": "Cedar planks"},
+    {"id": "mushroom", "label": "Forest mushroom"},
+    {"id": "lily", "label": "River lily"},
+    {"id": "pinecone", "label": "Big pine cone"},
+    {"id": "driftwood", "label": "Marsh driftwood"},
+    {"id": "pumpkin_seeds", "label": "Pumpkin seed pouch"},
+    {"id": "berry", "label": "Wild berry"},
+    {"id": "apple", "label": "Orchard apple"},
+    {"id": "plum", "label": "Grove plum"},
+    {"id": "pear", "label": "Ridge pear"},
+    {"id": "mint", "label": "River mint"},
+    {"id": "sage", "label": "Forest sage"},
+    {"id": "thyme", "label": "Meadow thyme"},
+    {"id": "chamomile", "label": "Hollow chamomile"}
+  ]
+}

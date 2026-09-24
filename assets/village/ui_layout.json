@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "theme": {
+    "ink": "#f8edd4",
+    "muted": "#d7b48a",
+    "orange": "#f2842a",
+    "plum": "#2a142f",
+    "panel": "rgba(28, 14, 36, 0.92)"
+  },
+  "hud": {
+    "anchor": "top-left",
+    "inset": { "x": 14, "y": 12 },
+    "rows": ["score", "coins", "where", "quest-tracker"],
+    "align": "left",
+    "gap": 0
+  },
+  "toolbar": {
+    "anchor": "top-right",
+    "inset": { "x": 14, "y": 12 },
+    "direction": "row-reverse",
+    "gap": 14,
+    "buttons": ["pause", "map-btn", "quests-btn", "build-btn"],
+    "labels": {}
+  },
+  "menus": {
+    "main": {
+      "sheet": "menu",
+      "layout": { "justify": "center", "align": "center", "columns": 1, "gap": 12 },
+      "copy": {
+        "title": "CappyWorld",
+        "kicker": "Halloween",
+        "body": "Haunted house up the path. Pumpkin patch to the east."
+      },
+      "items": [
+        { "type": "button", "ref": "play", "label": "Play" },
+        { "type": "button", "ref": "clothes", "label": "Clothes" },
+        { "type": "note", "ref": "menu-version" }
+      ]
+    },
+    "paused": {
+      "sheet": "paused",
+      "layout": { "justify": "center", "align": "center", "columns": 1, "gap": 12 },
+      "copy": { "title": "Paused" },
+      "items": [
+        { "type": "button", "ref": "resume", "label": "Resume" },
+        { "type": "button", "ref": "pause-clothes", "label": "Clothes" },
+        { "type": "separator" },
+        { "type": "button", "ref": "pause-save", "label": "Save code" },
+        { "type": "note", "ref": "pause-version" }
+      ]
+    }
+  },
+  "controls": {
+    "actions": ["hop", "flop", "go"]
+  }
+}

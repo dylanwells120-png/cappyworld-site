@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "plots": [
+    {
+      "id": "home",
+      "label": "Mochi's home",
+      "rect": [-20, -16, 20, 16],
+      "owned_default": true,
+      "price": 0
+    },
+    {
+      "id": "p1",
+      "label": "South meadow plot",
+      "rect": [-12, -52, 12, -28],
+      "sign": {"at": [0, -30], "h": 0},
+      "price": 120
+    },
+    {
+      "id": "p2",
+      "label": "East meadow plot",
+      "rect": [28, -52, 52, -28],
+      "sign": {"at": [40, -30], "h": 0},
+      "price": 250
+    },
+    {
+      "id": "p3",
+      "label": "Lower south plot",
+      "rect": [-12, -92, 12, -68],
+      "sign": {"at": [0, -70], "h": 0},
+      "price": 400
+    },
+    {
+      "id": "p4",
+      "label": "Lower east plot",
+      "rect": [28, -92, 52, -68],
+      "sign": {"at": [40, -70], "h": 0},
+      "price": 600
+    }
+  ]
+}

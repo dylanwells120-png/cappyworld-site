@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "npcs": [
+    {
+      "id": "yuzu",
+      "name": "Yuzu",
+      "role": "elder",
+      "tint": "#c9a66b",
+      "scale": 1.05,
+      "spot": {"level": "world", "at": [2, 62], "h": 200},
+      "schedule": [
+        {"start": 6, "end": 20, "at": [2, 62], "h": 200, "state": "wander"},
+        {"start": 20, "end": 6, "at": [2, 72], "h": 0, "state": "sleep"}
+      ],
+      "idle": ["Lovely day for a stroll.", "The notice board has news.", "Mochi, welcome back to the square."],
+      "requires": null
+    },
+    {
+      "id": "momo",
+      "name": "Momo",
+      "role": "baker",
+      "tint": "#d4a574",
+      "scale": 0.98,
+      "spot": {"level": "world", "at": [-6, 72], "h": 30},
+      "schedule": [
+        {"start": 5, "end": 18, "at": [-6, 72], "h": 30, "state": "idle"},
+        {"start": 18, "end": 5, "at": [-8, 76], "h": 120, "state": "sleep"}
+      ],
+      "idle": ["Fresh bread smells best at dawn.", "Have you tried the bench by the lantern?"],
+      "requires": null
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "role": "kid",
+      "tint": "#b8956a",
+      "scale": 0.82,
+      "spot": {"level": "world", "at": [10, 60], "h": -40},
+      "schedule": [
+        {"start": 7, "end": 19, "at": [10, 60], "h": -40, "state": "wander"},
+        {"start": 19, "end": 7, "at": [4, 68], "h": 90, "state": "sleep"}
+      ],
+      "idle": ["Bet I can hop higher than you!", "I found a shiny pebble over there."],
+      "requires": null
+    },
+    {
+      "id": "hana",
+      "name": "Hana",
+      "role": "gardener",
+      "tint": "#a8c47a",
+      "scale": 0.95,
+      "spot": {"level": "world", "at": [82, 4], "h": 270},
+      "idle": ["The meadow pumpkins are almost ready.", "Mind the mud near the river."],
+      "requires": {"quest_done": "yuzu_village"}
+    },
+    {
+      "id": "kiko",
+      "name": "Kiko",
+      "role": "fisher",
+      "tint": "#8eb5c9",
+      "scale": 1.0,
+      "spot": {"level": "world", "at": [-70, -8], "h": 90},
+      "idle": ["The reeds hide the best minnows.", "Quiet steps, Mochi."],
+      "requires": {"quest_done": "pip_pebble"}
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "role": "spa",
+      "tint": "#c4b8a8",
+      "scale": 1.02,
+      "spot": {"level": "world", "at": [78, 68], "h": 180},
+      "idle": ["The springs steam nicest at dusk.", "Soak your paws when you can."],
+      "requires": {"quest_done": "hana_meadow"}
+    },
+    {
+      "id": "juniper",
+      "name": "Juniper",
+      "role": "courier",
+      "tint": "#9a7fb8",
+      "scale": 0.96,
+      "spot": {"level": "world", "at": [-14, 62], "h": 120},
+      "schedule": [
+        {"start": 7, "end": 21, "at": [-14, 62], "h": 120, "state": "idle"},
+        {"start": 21, "end": 7, "at": [-18, 84], "h": 90, "state": "sleep"}
+      ],
+      "idle": ["The board gets a new notice every morning.", "Parcels, notices, gossip. I carry all three.", "Come back tomorrow for a fresh job."],
+      "requires": {"quest_done": "yuzu_village"}
+    },
+    {
+      "id": "sable",
+      "name": "Sable",
+      "role": "carpenter",
+      "tint": "#7d6552",
+      "scale": 1.08,
+      "spot": {"level": "world", "at": [6, -25], "h": 180},
+      "schedule": [
+        {"start": 6, "end": 20, "at": [6, -25], "h": 180, "state": "wander"},
+        {"start": 20, "end": 6, "at": [18, -22], "h": 270, "state": "sleep"}
+      ],
+      "idle": ["Good land down here. Cheap, too.", "Measure twice, hammer once.", "A cottage first. Then we talk cafés."],
+      "requires": {"quest_done": "pip_ruckus"}
+    }
+  ]
+}

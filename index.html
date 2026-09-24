@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140818">
+  <meta name="description" content="CappyWorld is a family-friendly Halloween village. Walk Mochi the capybara, knock over a little ruckus, and play in the browser.">
+  <title>CappyWorld — Halloween in the village</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home" data-announcements="data/announcements.json">
+  <header class="site-header">
+    <a class="brand" href="./"><img src="favicon.svg" alt=""> CappyWorld</a>
+    <nav class="nav" aria-label="Site">
+      <a data-nav="home" href="./">Home</a>
+      <a data-nav="play" href="play/">Play</a>
+      <a data-nav="gallery" href="gallery/">Gallery</a>
+      <a data-nav="announcements" href="announcements/">Announcements</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="kicker">Cute-spooky · family friendly</p>
+        <h1>CappyWorld</h1>
+        <p class="lede">Walk Mochi the capybara through a dusk-lit park, a pumpkin meadow, and a little village. Knock a stack over. Say hello. Nothing ends the day.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="play/">Play</a>
+          <a class="btn ghost" href="gallery/">Gallery</a>
+          <a class="btn ghost" href="announcements/">Announcements</a>
+        </div>
+      </div>
+      <figure class="moon-card">
+        <img src="assets/map/world_map.png" alt="Painted map of Mochi's home, the village, the river, the forest, and the pumpkin meadow" width="720" height="720">
+        <figcaption>The village map from the game. North is up.</figcaption>
+      </figure>
+    </section>
+    <section class="band" aria-label="What you can do">
+      <article class="card">
+        <h2>Mochi's home</h2>
+        <p>The fenced park is home. Gates open onto the rest of the world: village to the north, meadow to the east, forest across the river.</p>
+      </article>
+      <article class="card">
+        <h2>A small ruckus</h2>
+        <p>Hop and flop into crates, pots, and pumpkins. The mess is the score. Pip will count if you make one.</p>
+      </article>
+      <article class="card">
+        <h2>Village life</h2>
+        <p>Talk to neighbors, follow a quest, earn coins, and claim a plot when you are ready to build.</p>
+      </article>
+    </section>
+    <section aria-labelledby="happening">
+      <h2 id="happening" class="section-title">Happening now</h2>
+      <div id="featured-announcement" class="featured-home" data-more="announcements/">
+        <p>Loading the latest announcement…</p>
+      </div>
+    </section>
+    <section class="band" aria-label="More of the site" style="padding-top: 1.5rem;">
+      <article class="card">
+        <h2>Gallery</h2>
+        <p>Still frames from this web build: the Halloween menu, home, the square, the meadow, and the forest.</p>
+        <p><a class="btn ghost" href="gallery/">See the gallery</a></p>
+      </article>
+      <article class="card">
+        <h2>How to play</h2>
+        <p>WASD or the arrows walk. Space hops. F flops. E, or Go, talks and steps through a gate.</p>
+        <p><a class="btn ghost" href="play/">Open the game</a></p>
+      </article>
+      <article class="card">
+        <h2>Announcements</h2>
+        <p>The Halloween Live Event, plus short notes about the village and browser play.</p>
+        <p><a class="btn ghost" href="announcements/">Read announcements</a></p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">CappyWorld · Mochi the capybara · A family-friendly Halloween village</div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

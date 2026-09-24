@@ -1,0 +1,41 @@
+{
+  "announcements": [
+    {
+      "id": "halloween-live",
+      "kind": "live-event",
+      "title": "Halloween Live Event",
+      "date": "October 1 – November 7",
+      "featured": true,
+      "summary": "The village sky turns Halloween dusk. The haunted house and the pumpkin meadow are waiting.",
+      "body": [
+        "From October 1 through November 7, CappyWorld wears its Halloween light: a purple-orange dusk, stars a little earlier, and the same soft park you already know. It is the season already built into the game, not a separate mode.",
+        "Walk north from Mochi's home into the village, then west across the bridge to the haunted house in Whispering forest. The ghost inside only floats. East of home, the pumpkin meadow is full of pumpkins and hay bales you can knock over.",
+        "Bring a grown-up if you like. Nothing jumps out, and nothing ends the day. Hop, flop, say hello, and wander back before the moon is high."
+      ]
+    },
+    {
+      "id": "village-neighbors",
+      "kind": "note",
+      "title": "New neighbors in the square",
+      "date": "In the current build",
+      "featured": false,
+      "summary": "Juniper the courier and Sable the carpenter are in the village, and the notice board posts a new job each day.",
+      "body": [
+        "Juniper waits by the notice board. Sable hangs around the first plot sign and will ask you to claim land, haul planks, and raise a cottage.",
+        "The notice board picks one small job for the day. Finish it, or leave it; a new note is up after midnight in the game clock."
+      ]
+    },
+    {
+      "id": "play-in-browser",
+      "kind": "note",
+      "title": "Play in the browser",
+      "date": "Available now",
+      "featured": false,
+      "summary": "The same CappyWorld village from this project runs on the Play page. No install.",
+      "body": [
+        "Open Play, wait for the park to load, then press Play on the game menu. WASD or the arrows walk. Space hops. F flops. E, or the Go button, talks, enters a gate, or picks up clothes.",
+        "Clothes and coins stay in this browser. Pause, then Save code, if you want to keep a copy you can paste back later."
+      ]
+    }
+  ]
+}

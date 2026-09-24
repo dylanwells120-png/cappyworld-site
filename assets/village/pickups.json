@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "pickups": [
+    {"id": "pebble_square", "item": "pebble", "level": "world", "at": [8, 66], "quest": "pip_pebble"},
+    {"id": "carrot_meadow", "item": "carrot", "level": "world", "at": [76, 8], "quest": "momo_carrot"},
+    {"id": "spectacles_marsh", "item": "spectacles", "level": "world", "at": [-82, -18], "quest": "kiko_glasses"},
+    {"id": "parcel_lantern", "item": "parcel", "level": "world", "at": [-9, 78], "quest": "juniper_parcel"},
+    {"id": "planks_forest", "item": "planks", "level": "world", "at": [-54, 66], "quest": "sable_planks"},
+    {"id": "berry_hollow", "item": "berry", "level": "world", "at": [98, -94]},
+    {"id": "apple_orchard", "item": "apple", "level": "world", "at": [120, 16]},
+    {"id": "plum_orchard", "item": "plum", "level": "world", "at": [126, 52]},
+    {"id": "pear_ridge", "item": "pear", "level": "world", "at": [36, 116]},
+    {"id": "mint_marsh", "item": "mint", "level": "world", "at": [-92, -28]},
+    {"id": "sage_forest", "item": "sage", "level": "world", "at": [-88, 62]},
+    {"id": "thyme_meadow", "item": "thyme", "level": "world", "at": [68, 12]},
+    {"id": "chamomile_hollow", "item": "chamomile", "level": "world", "at": [110, -86]}
+  ]
+}

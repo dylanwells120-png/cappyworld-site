@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140818">
+  <title>Announcements — CappyWorld</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body data-page="announcements" data-announcements="../data/announcements.json">
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../favicon.svg" alt=""> CappyWorld</a>
+    <nav class="nav" aria-label="Site">
+      <a data-nav="home" href="../">Home</a>
+      <a data-nav="play" href="../play/">Play</a>
+      <a data-nav="gallery" href="../gallery/">Gallery</a>
+      <a data-nav="announcements" href="./">Announcements</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <header class="page-intro">
+      <p class="kicker">Village board</p>
+      <h1 class="section-title">Announcements</h1>
+      <p>The Halloween Live Event is the one to read first. Shorter notes sit under it. All of the wording comes from one file, <code>data/announcements.json</code>.</p>
+    </header>
+    <div id="announcement-list" class="announce-list">
+      <p>Loading announcements…</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">CappyWorld · Announcements for the Halloween village</div>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>

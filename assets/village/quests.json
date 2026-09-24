@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "quests": [
+    {
+      "id": "yuzu_welcome",
+      "title": "Welcome to the village",
+      "giver": "yuzu",
+      "requires": [],
+      "intro": "Oh! A visitor. I'm Yuzu, the elder capybara. The square is safer when neighbours know each other.",
+      "outro": "Good. Wander north and say hello to the others.",
+      "steps": [{"type": "talk", "npc": "yuzu"}],
+      "reward": {"coins": 15}
+    },
+    {
+      "id": "yuzu_village",
+      "title": "Explore the square",
+      "giver": "yuzu",
+      "requires": ["yuzu_welcome"],
+      "intro": "Walk the village loop once so you learn the lanes and lanterns.",
+      "outro": "You found your bearings. Pip has been collecting pebbles again.",
+      "steps": [{"type": "visit", "region": "village"}],
+      "reward": {"coins": 20}
+    },
+    {
+      "id": "pip_pebble",
+      "title": "Pip's pebble",
+      "giver": "pip",
+      "requires": ["yuzu_village"],
+      "intro": "I lost my favourite smooth pebble near the notice board. Can you grab it for me?",
+      "outro": "Yes! That's the one. You're pretty good at finding things.",
+      "steps": [{"type": "collect", "item": "pebble"}],
+      "reward": {"coins": 15}
+    },
+    {
+      "id": "momo_bread",
+      "title": "Momo's greeting",
+      "giver": "momo",
+      "requires": ["pip_pebble"],
+      "intro": "The oven's warm and the square smells like cinnamon. Come say hello.",
+      "outro": "You're welcome at the bench any time.",
+      "steps": [{"type": "talk", "npc": "momo"}],
+      "reward": {"coins": 20}
+    },
+    {
+      "id": "hana_meadow",
+      "title": "Pumpkin check",
+      "giver": "hana",
+      "requires": ["momo_bread"],
+      "intro": "The meadow pumpkins need a look before the frost. Can you visit the patch?",
+      "outro": "They're growing nicely. Thank you for checking.",
+      "steps": [{"type": "visit", "region": "meadow"}],
+      "reward": {"coins": 20}
+    },
+    {
+      "id": "pip_ruckus",
+      "title": "Ruckus challenge",
+      "giver": "pip",
+      "requires": ["hana_meadow"],
+      "intro": "Push three crates in a row without stopping. I'll count your ruckus score!",
+      "outro": "Whoa, what a mess. I love it.",
+      "steps": [{"type": "ruckus", "score": 3}],
+      "reward": {"coins": 30}
+    },
+    {
+      "id": "kiko_glasses",
+      "title": "Lost spectacles",
+      "giver": "kiko",
+      "requires": ["pip_ruckus"],
+      "intro": "I dropped my spectacles in the reeds. Could you find them before the minnows do?",
+      "outro": "Found them! I can read the river again.",
+      "steps": [{"type": "find", "item": "spectacles"}],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "momo_carrot",
+      "title": "Carrot delivery",
+      "giver": "momo",
+      "requires": ["kiko_glasses"],
+      "intro": "Hana left a carrot in the meadow. Bring it back for tomorrow's stew.",
+      "outro": "Perfect. The stew will be wonderful.",
+      "steps": [
+        {"type": "collect", "item": "carrot"},
+        {"type": "deliver", "npc": "momo", "item": "carrot"}
+      ],
+      "reward": {"coins": 35}
+    },
+    {
+      "id": "tofu_springs",
+      "title": "Hot springs visit",
+      "giver": "tofu",
+      "requires": ["momo_carrot"],
+      "intro": "The springs are steaming today. Come soak your paws on the east road.",
+      "outro": "Ahh. The water knows how to welcome travellers.",
+      "steps": [{"type": "soak", "zone": "main_pool"}],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "yuzu_elder",
+      "title": "Elder's thanks",
+      "giver": "yuzu",
+      "requires": ["tofu_springs"],
+      "intro": "You've helped everyone. One last chat by the notice board?",
+      "outro": "The village is lucky to have you, Mochi.",
+      "steps": [{"type": "talk", "npc": "yuzu"}],
+      "reward": {"coins": 40, "flag": "village_hero"}
+    },
+    {
+      "id": "juniper_parcel",
+      "title": "Special delivery",
+      "giver": "juniper",
+      "requires": ["yuzu_village"],
+      "intro": "You look quick on your paws. A parcel for Hana fell off my cart by the west lantern. Run it out to the meadow for me?",
+      "outro": "Hana got her seed catalogue. Check the board here each morning, I post a new job every day.",
+      "steps": [
+        {"type": "collect", "item": "parcel"},
+        {"type": "deliver", "npc": "hana", "item": "parcel"}
+      ],
+      "reward": {"coins": 30}
+    },
+    {
+      "id": "sable_claim",
+      "title": "Stake a claim",
+      "giver": "sable",
+      "requires": ["pip_ruckus"],
+      "intro": "See that sign? South meadow plot. Flat, dry, close to home. Buy it and I'll show you how to raise a roof.",
+      "outro": "Ha! A landowner. Now you need somewhere to put a kettle on.",
+      "steps": [{"type": "buy_plot", "plot": "p1"}],
+      "reward": {"coins": 50}
+    },
+    {
+      "id": "sable_planks",
+      "title": "Planks for the porch",
+      "giver": "sable",
+      "requires": ["sable_claim"],
+      "intro": "I left a bundle of cedar planks at the forest edge across the north bridge. Fetch them and I'll cut you a deal on the cottage.",
+      "outro": "Straight grain, no knots. These will do nicely.",
+      "steps": [
+        {"type": "collect", "item": "planks"},
+        {"type": "deliver", "npc": "sable", "item": "planks"}
+      ],
+      "reward": {"coins": 35}
+    },
+    {
+      "id": "sable_cottage",
+      "title": "Raise a roof",
+      "giver": "sable",
+      "requires": ["sable_planks"],
+      "intro": "Stand on your plot, open Build, and pick the cottage. Turn it so the door faces the path. Momo's been eyeing a place of her own.",
+      "outro": "Look at that. Momo's already packing her flour sacks. She'll sleep there from tonight.",
+      "steps": [{"type": "build", "building": "cottage"}],
+      "reward": {"coins": 60, "flag": "cottage_built"}
+    },
+    {
+      "id": "sable_garden",
+      "title": "Green thumbs",
+      "giver": "sable",
+      "requires": ["sable_cottage"],
+      "intro": "A cottage wants a garden. Beds are cheap and they earn a little every minute you're away.",
+      "outro": "Carrots by spring. Now, about that second plot…",
+      "steps": [{"type": "build", "building": "garden"}],
+      "reward": {"coins": 40}
+    },
+    {
+      "id": "sable_market",
+      "title": "Open for business",
+      "giver": "sable",
+      "requires": ["sable_garden"],
+      "intro": "The east meadow plot is going for a song. Buy it, put a market stall on it, and the whole valley will come to shop.",
+      "outro": "A real village now. I'll be here when you're ready for the café.",
+      "steps": [
+        {"type": "buy_plot", "plot": "p2"},
+        {"type": "build", "building": "market"}
+      ],
+      "reward": {"coins": 80}
+    }
+  ]
+}

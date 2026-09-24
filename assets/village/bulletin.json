@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "bulletin": [
+    {
+      "id": "board_mushroom",
+      "title": "Bulletin: forest mushroom",
+      "giver": "juniper",
+      "requires": ["yuzu_village"],
+      "intro": "Today's notice: Momo wants a forest mushroom for the lunch stew. There's a good patch by the bridge path in the Whispering forest.",
+      "outro": "Delivered and stamped. Juniper will have the coins waiting.",
+      "steps": [
+        {"type": "collect", "item": "mushroom"},
+        {"type": "deliver", "npc": "momo", "item": "mushroom"}
+      ],
+      "reward": {"coins": 25},
+      "pickups": [{"id": "mushroom_forest", "item": "mushroom", "level": "world", "at": [-56, 44]}]
+    },
+    {
+      "id": "board_lily",
+      "title": "Bulletin: river lily",
+      "giver": "juniper",
+      "requires": ["yuzu_village"],
+      "intro": "Today's notice: Hana is pressing flowers and wants a river lily. They float near the north bridge.",
+      "outro": "Pressed flat and pretty. Job done.",
+      "steps": [
+        {"type": "collect", "item": "lily"},
+        {"type": "deliver", "npc": "hana", "item": "lily"}
+      ],
+      "reward": {"coins": 25},
+      "pickups": [{"id": "lily_bridge", "item": "lily", "level": "world", "at": [-34, 62]}]
+    },
+    {
+      "id": "board_pinecone",
+      "title": "Bulletin: biggest pine cone",
+      "giver": "juniper",
+      "requires": ["yuzu_village"],
+      "intro": "Today's notice: Pip is running a pine cone contest and wants the biggest one from the forest edge.",
+      "outro": "Pip says it's the biggest cone in village history.",
+      "steps": [
+        {"type": "collect", "item": "pinecone"},
+        {"type": "deliver", "npc": "pip", "item": "pinecone"}
+      ],
+      "reward": {"coins": 20},
+      "pickups": [{"id": "pinecone_forest", "item": "pinecone", "level": "world", "at": [-62, 16]}]
+    },
+    {
+      "id": "board_driftwood",
+      "title": "Bulletin: marsh driftwood",
+      "giver": "juniper",
+      "requires": ["pip_pebble"],
+      "intro": "Today's notice: Kiko needs a piece of driftwood for a new fishing perch. The marsh washes some up south of the reeds.",
+      "outro": "Kiko is already whittling it. Nice work.",
+      "steps": [
+        {"type": "collect", "item": "driftwood"},
+        {"type": "deliver", "npc": "kiko", "item": "driftwood"}
+      ],
+      "reward": {"coins": 30},
+      "pickups": [{"id": "driftwood_marsh", "item": "driftwood", "level": "world", "at": [-74, -30]}]
+    },
+    {
+      "id": "board_pumpkin_seed",
+      "title": "Bulletin: pumpkin seeds",
+      "giver": "juniper",
+      "requires": ["hana_meadow"],
+      "intro": "Today's notice: Tofu wants roasted pumpkin seeds for the bathhouse guests. Hana leaves a seed pouch out in the meadow.",
+      "outro": "Salty, warm, and gone in a minute. Tofu sends thanks.",
+      "steps": [
+        {"type": "collect", "item": "pumpkin_seeds"},
+        {"type": "deliver", "npc": "tofu", "item": "pumpkin_seeds"}
+      ],
+      "reward": {"coins": 30},
+      "pickups": [{"id": "seeds_meadow", "item": "pumpkin_seeds", "level": "world", "at": [88, -10]}]
+    }
+  ]
+}
