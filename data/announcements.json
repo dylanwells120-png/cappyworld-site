@@ -4,13 +4,25 @@
       "id": "halloween-live",
       "kind": "live-event",
       "title": "Halloween Live Event",
-      "date": "October 1 – November 7",
+      "date": "October 1 \u2013 November 7",
       "featured": true,
       "summary": "The village sky turns Halloween dusk. The haunted house and the pumpkin meadow are waiting.",
       "body": [
         "From October 1 through November 7, CappyWorld wears its Halloween light: a purple-orange dusk, stars a little earlier, and the same soft park you already know. It is the season already built into the game, not a separate mode.",
         "Walk north from Mochi's home into the village, then west across the bridge to the haunted house in Whispering forest. The ghost inside only floats. East of home, the pumpkin meadow is full of pumpkins and hay bales you can knock over.",
         "Bring a grown-up if you like. Nothing jumps out, and nothing ends the day. Hop, flop, say hello, and wander back before the moon is high."
+      ]
+    },
+    {
+      "id": "name-your-capybara",
+      "kind": "note",
+      "title": "Name your capybara",
+      "date": "September 24, 2026",
+      "featured": false,
+      "summary": "When you press Play, type a name and pick a male or female capybara. Your name floats above you in the park.",
+      "body": [
+        "The village now asks who you are before you walk in. Type a name, choose a male capybara (a bit bigger) or a female capybara (with a flower), then join the park.",
+        "Your name sits over your capybara so friends can tell you apart. Clothes and coins still stay in this browser. Pause, then Save code, if you want a copy you can paste back later."
       ]
     },
     {

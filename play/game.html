@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#140818">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=13">
+  <link rel="stylesheet" href="../css/play.css?v=15">
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -28,18 +28,43 @@
   <div id="income-markers" aria-hidden="true"></div>
   <div id="load">
     <h1>CappyWorld</h1>
-    <p class="kicker">Halloween</p>
     <p id="load-status">Loading the park…</p>
     <p id="load-version" class="version-tag"></p>
     <div id="load-track" aria-hidden="true"><div id="load-bar"></div></div>
   </div>
   <div id="menu" class="sheet hidden">
+    <aside id="event-callout" class="comic-pop" aria-label="Halloween live event">
+      <button id="event-callout-close" type="button" aria-label="Dismiss">×</button>
+      <p class="comic-burst">LIVE</p>
+      <p class="comic-title">Halloween Live Event</p>
+      <p class="comic-ends">Ends Nov. 1st</p>
+    </aside>
     <h1>CappyWorld</h1>
-    <p class="kicker">Halloween</p>
-    <p class="menu-body">Haunted house up the path. Pumpkin patch to the east.</p>
+    <p class="menu-body">Capybara Simulator</p>
     <button id="play" type="button">Play</button>
     <button id="clothes" type="button">Clothes</button>
     <p id="menu-version" class="version-tag"></p>
+  </div>
+  <div id="character" class="sheet hidden">
+    <h2>Who are you?</h2>
+    <p>Type a name and pick a capybara. Friends in the park will see you.</p>
+    <label class="char-label" for="character-name">Your name</label>
+    <input id="character-name" type="text" maxlength="16" autocomplete="nickname" placeholder="Type a name" enterkeyhint="done" spellcheck="false">
+    <p id="character-hint" class="char-hint">Type a name to join the park.</p>
+    <div id="character-looks" role="group" aria-label="Capybara">
+      <button type="button" class="look-card selected" data-gender="male" aria-pressed="true">
+        <span class="look-art male" aria-hidden="true"></span>
+        <strong>Male capybara</strong>
+        <span>A bit bigger</span>
+      </button>
+      <button type="button" class="look-card" data-gender="female" aria-pressed="false">
+        <span class="look-art female" aria-hidden="true"></span>
+        <strong>Female capybara</strong>
+        <span>Wears a flower</span>
+      </button>
+    </div>
+    <button id="character-join" type="button" disabled>Join the park</button>
+    <button id="character-back" type="button">Back</button>
   </div>
   <div id="dialogue" class="sheet hidden dialogue">
     <div id="dialogue-tint"></div>
@@ -68,7 +93,7 @@
   </div>
   <div id="map" class="sheet hidden">
     <h2>Map</h2>
-    <p>Drag to pan, scroll or +/− to zoom. Tap a gold pin to fast travel. Green dot is Mochi.</p>
+    <p>Drag to pan, scroll or +/− to zoom. Tap a gold pin to fast travel. Green dot is you. Orange dots are friends.</p>
     <div id="map-stage">
       <canvas id="map-canvas" width="720" height="720"></canvas>
       <div id="map-nav">
@@ -120,6 +145,6 @@
       </div>
     </div>
   </div>
-  <script src="../dist/game.js?v=b41f569d59"></script>
+  <script src="../dist/game.js?v=aeae92a2f4"></script>
 </body>
 </html>
