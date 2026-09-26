@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "blueprints": [
+    {
+      "id": "juniper_tip",
+      "name": "Juniper tip",
+      "nodes": [
+        {
+          "id": "evt_talk",
+          "type": "on_talk",
+          "x": 40,
+          "y": 80,
+          "data": { "npc": "juniper" }
+        },
+        {
+          "id": "act_say",
+          "type": "say",
+          "x": 280,
+          "y": 80,
+          "data": { "text": "Juniper slips you a tip for the next delivery." }
+        },
+        {
+          "id": "act_coins",
+          "type": "give_coins",
+          "x": 520,
+          "y": 80,
+          "data": { "amount": 5 }
+        }
+      ],
+      "wires": [
+        { "from": "evt_talk", "to": "act_say" },
+        { "from": "act_say", "to": "act_coins" }
+      ]
+    }
+  ]
+}

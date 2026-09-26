@@ -6,8 +6,8 @@
       "title": "Welcome to the village",
       "giver": "yuzu",
       "requires": [],
-      "intro": "Oh! A visitor. I'm Yuzu, the elder capybara. The square is safer when neighbours know each other.",
-      "outro": "Good. Wander north and say hello to the others.",
+      "intro": "Oh! A visitor. I'm Yuzu, the elder capybara. The square is safer when neighbours know each other — and when they know the train.",
+      "outro": "Good. Take the train from the west station when you're ready, and peek into the village hall up north.",
       "steps": [{"type": "talk", "npc": "yuzu"}],
       "reward": {"coins": 15}
     },
@@ -16,8 +16,8 @@
       "title": "Explore the square",
       "giver": "yuzu",
       "requires": ["yuzu_welcome"],
-      "intro": "Walk the village loop once so you learn the lanes and lanterns.",
-      "outro": "You found your bearings. Pip has been collecting pebbles again.",
+      "intro": "Walk the village loop once — past the hall door and the station platform — so you learn the lanes and lanterns.",
+      "outro": "You found your bearings. Porter runs the train west of the square; Pip has been collecting pebbles again.",
       "steps": [{"type": "visit", "region": "village"}],
       "reward": {"coins": 20}
     },
@@ -172,6 +172,138 @@
         {"type": "build", "building": "market"}
       ],
       "reward": {"coins": 80}
+    },
+    {
+      "id": "pip_halloween_party",
+      "title": "Yard costume party",
+      "giver": "pip",
+      "requires": [],
+      "intro": "Boo! It's the Halloween live event! When the sky turns orange, everyone meets at your yard. Grab the candy bag by the lanterns, then say hi to Momo and Yuzu in costume!",
+      "outro": "You threw the best party on the block. Keep those spooky outfits!",
+      "steps": [
+        {"type": "collect", "item": "candy"},
+        {"type": "talk", "npc": "momo"},
+        {"type": "talk", "npc": "yuzu"}
+      ],
+      "reward": {"coins": 45, "flag": "halloween_party"}
+    },
+    {
+      "id": "porter_first_ride",
+      "title": "First train ride",
+      "giver": "porter",
+      "requires": ["yuzu_village"],
+      "intro": "Tickets up! Hop the train at this platform and ride out to the meadow. I'll stamp your paws when you get back.",
+      "outro": "Meadow stop, right on time. Come find me whenever you need another line.",
+      "steps": [
+        {"type": "talk", "npc": "porter"},
+        {"type": "visit", "region": "meadow"}
+      ],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "yuzu_hall",
+      "title": "Village hall",
+      "giver": "yuzu",
+      "requires": ["yuzu_village"],
+      "intro": "The hall door faces the north square. Step inside once so you know where we gather.",
+      "outro": "Good. The benches are for anyone with news — or tired paws.",
+      "steps": [{"type": "enter", "level": "hall"}],
+      "reward": {"coins": 20}
+    },
+    {
+      "id": "momo_cafe",
+      "title": "Café tables",
+      "giver": "momo",
+      "requires": ["momo_bread"],
+      "intro": "The café on the east square finally has tables. Come inside and say hello properly.",
+      "outro": "Sit any time. Cinnamon tastes better under a roof.",
+      "steps": [
+        {"type": "enter", "level": "cafe"},
+        {"type": "talk", "npc": "momo"}
+      ],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "nori_ore",
+      "title": "Crystal ore",
+      "giver": "nori",
+      "requires": ["porter_first_ride"],
+      "intro": "The mine mouth is open. Step inside and chip a bit of ore near the entrance for me.",
+      "outro": "Solid stuff. Sable will want a look at this.",
+      "steps": [
+        {"type": "enter", "level": "mine"},
+        {"type": "collect", "item": "ore"}
+      ],
+      "reward": {"coins": 30}
+    },
+    {
+      "id": "nori_deliver",
+      "title": "Ore for Sable",
+      "giver": "nori",
+      "requires": ["nori_ore"],
+      "intro": "Take that ore down to Sable by the meadow plots. Tell him the vein's still friendly.",
+      "outro": "He'll sort the metal. You did the hard part.",
+      "steps": [{"type": "deliver", "npc": "sable", "item": "ore"}],
+      "reward": {"coins": 35}
+    },
+    {
+      "id": "tofu_rails",
+      "title": "Rails to the springs",
+      "giver": "tofu",
+      "requires": ["porter_first_ride"],
+      "intro": "Ride the east line to the hot springs when you can. A soak quest can wait — just see the stop.",
+      "outro": "Steam and rails. Come back when your paws need the pool.",
+      "steps": [{"type": "visit", "region": "springs"}],
+      "reward": {"coins": 20}
+    },
+    {
+      "id": "nori_lantern",
+      "title": "Deeper light",
+      "giver": "nori",
+      "requires": ["nori_ore"],
+      "intro": "I left a spare lantern deeper in the mine. Fetch it before the dark gets ideas.",
+      "outro": "Bright enough. Hang it near the cart next time.",
+      "steps": [{"type": "find", "item": "lantern_mine"}],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "kiko_catch",
+      "title": "River catch",
+      "giver": "kiko",
+      "requires": ["kiko_glasses"],
+      "intro": "Cast from the river bank with Go — or near the springs pool — and bring me a silver fish.",
+      "outro": "Quiet paws, clean catch. The reeds will remember you.",
+      "steps": [
+        {"type": "collect", "item": "fish_silver"},
+        {"type": "deliver", "npc": "kiko", "item": "fish_silver"}
+      ],
+      "reward": {"coins": 35}
+    },
+    {
+      "id": "biscuit_cafe",
+      "title": "Baker at the café",
+      "giver": "biscuit",
+      "requires": ["momo_cafe"],
+      "intro": "Step into the café on the east square, then come say hello. I keep the pastry side warm.",
+      "outro": "Good. When the tray is out, grab a pastry for me.",
+      "steps": [
+        {"type": "enter", "level": "cafe"},
+        {"type": "talk", "npc": "biscuit"}
+      ],
+      "reward": {"coins": 25}
+    },
+    {
+      "id": "biscuit_pastry",
+      "title": "Warm pastry",
+      "giver": "biscuit",
+      "requires": ["biscuit_cafe"],
+      "intro": "I left a warm pastry on the café tray inside. Fetch it before it cools.",
+      "outro": "Still warm. That's the whole trick.",
+      "steps": [
+        {"type": "enter", "level": "cafe"},
+        {"type": "collect", "item": "pastry"}
+      ],
+      "reward": {"coins": 30}
     }
   ]
 }

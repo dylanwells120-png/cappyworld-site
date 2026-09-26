@@ -13,6 +13,11 @@
     {"id": "mint_marsh", "item": "mint", "level": "world", "at": [-92, -28]},
     {"id": "sage_forest", "item": "sage", "level": "world", "at": [-88, 62]},
     {"id": "thyme_meadow", "item": "thyme", "level": "world", "at": [68, 12]},
-    {"id": "chamomile_hollow", "item": "chamomile", "level": "world", "at": [110, -86]}
+    {"id": "chamomile_hollow", "item": "chamomile", "level": "world", "at": [110, -86]},
+    {"id": "candy_party", "item": "candy", "level": "world", "at": [-3, -6], "quest": "pip_halloween_party"},
+    {"id": "sticker_party", "item": "spooky_sticker", "level": "world", "at": [7, 6]},
+    {"id": "ore_mine", "item": "ore", "level": "mine", "at": [1.5, 396], "quest": "nori_ore"},
+    {"id": "lantern_mine_deep", "item": "lantern_mine", "level": "mine", "at": [-1.5, 402], "quest": "nori_lantern"},
+    {"id": "pastry_cafe", "item": "pastry", "level": "cafe", "at": [0.1, 342.4], "quest": "biscuit_pastry"}
   ]
 }

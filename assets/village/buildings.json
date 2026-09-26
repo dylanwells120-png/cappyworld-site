@@ -65,6 +65,81 @@
       "income": {
         "per_min": 3,
         "cap_min": 45
+      },
+      "effects": {
+        "villager": "momo"
+      }
+    },
+    {
+      "id": "bakery",
+      "label": "Bakery",
+      "file": "village/v_bakery.glb",
+      "footprint": [
+        4,
+        3
+      ],
+      "price": 200,
+      "limit": 1,
+      "income": {
+        "per_min": 2.5,
+        "cap_min": 35
+      },
+      "effects": {
+        "villager": "biscuit"
+      }
+    },
+    {
+      "id": "workshop",
+      "label": "Workshop",
+      "file": "village/v_workshop.glb",
+      "footprint": [
+        4,
+        3
+      ],
+      "price": 220,
+      "limit": 1,
+      "income": {
+        "per_min": 2,
+        "cap_min": 30
+      },
+      "effects": {
+        "villager": "sable"
+      }
+    },
+    {
+      "id": "hut",
+      "label": "Fishing hut",
+      "file": "village/v_hut.glb",
+      "footprint": [
+        3,
+        3
+      ],
+      "price": 160,
+      "limit": 1,
+      "income": {
+        "per_min": 1.5,
+        "cap_min": 25
+      },
+      "effects": {
+        "villager": "kiko"
+      }
+    },
+    {
+      "id": "greenhouse",
+      "label": "Greenhouse",
+      "file": "village/v_greenhouse.glb",
+      "footprint": [
+        4,
+        3
+      ],
+      "price": 190,
+      "limit": 1,
+      "income": {
+        "per_min": 2,
+        "cap_min": 28
+      },
+      "effects": {
+        "villager": "hana"
       }
     },
     {
@@ -80,6 +155,9 @@
       "income": {
         "per_min": 4,
         "cap_min": 60
+      },
+      "effects": {
+        "villager": "tofu"
       }
     }
   ]

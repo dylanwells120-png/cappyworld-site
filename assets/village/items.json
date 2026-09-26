@@ -18,6 +18,16 @@
     {"id": "mint", "label": "River mint"},
     {"id": "sage", "label": "Forest sage"},
     {"id": "thyme", "label": "Meadow thyme"},
-    {"id": "chamomile", "label": "Hollow chamomile"}
+    {"id": "chamomile", "label": "Hollow chamomile"},
+    {"id": "candy", "label": "Candy bag"},
+    {"id": "spooky_sticker", "label": "Spooky sticker sheet"},
+    {"id": "ore", "label": "Crystal ore"},
+    {"id": "ticket", "label": "Train ticket"},
+    {"id": "lantern_mine", "label": "Mine lantern"},
+    {"id": "hall_note", "label": "Hall notice"},
+    {"id": "fish_minnow", "label": "River minnow"},
+    {"id": "fish_silver", "label": "Silver fish"},
+    {"id": "fish_carp", "label": "Lazy carp"},
+    {"id": "pastry", "label": "Warm pastry"}
   ]
 }

@@ -70,6 +70,61 @@
       ],
       "reward": {"coins": 30},
       "pickups": [{"id": "seeds_meadow", "item": "pumpkin_seeds", "level": "world", "at": [88, -10]}]
+    },
+    {
+      "id": "board_ore",
+      "title": "Bulletin: spare ore",
+      "giver": "juniper",
+      "requires": ["nori_deliver"],
+      "intro": "Today's notice: Nori says another ore chunk is near the mine entrance. Bring it to Sable for the board.",
+      "outro": "Stamped and delivered. The board likes busy paws.",
+      "steps": [
+        {"type": "collect", "item": "ore"},
+        {"type": "deliver", "npc": "sable", "item": "ore"}
+      ],
+      "reward": {"coins": 30},
+      "pickups": [{"id": "ore_board", "item": "ore", "level": "mine", "at": [-2, 395.5]}]
+    },
+    {
+      "id": "board_hall_note",
+      "title": "Bulletin: hall note",
+      "giver": "juniper",
+      "requires": ["yuzu_hall"],
+      "intro": "Today's notice: Yuzu left a slip on the hall desk. Fetch it inside and bring it back to the elder.",
+      "outro": "Yuzu has her note. Quiet work, good pay.",
+      "steps": [
+        {"type": "collect", "item": "hall_note"},
+        {"type": "deliver", "npc": "yuzu", "item": "hall_note"}
+      ],
+      "reward": {"coins": 25},
+      "pickups": [{"id": "hall_note_board", "item": "hall_note", "level": "hall", "at": [-1.5, 279]}]
+    },
+    {
+      "id": "board_ticket",
+      "title": "Bulletin: lost ticket",
+      "giver": "juniper",
+      "requires": ["yuzu_welcome"],
+      "intro": "Today's notice: Someone dropped a train ticket by the village station. Return it to Porter on the platform.",
+      "outro": "Porter says the rails forgive lost tickets. Job done.",
+      "steps": [
+        {"type": "collect", "item": "ticket"},
+        {"type": "deliver", "npc": "porter", "item": "ticket"}
+      ],
+      "reward": {"coins": 20},
+      "pickups": [{"id": "ticket_station", "item": "ticket", "level": "world", "at": [-4, 57]}]
+    },
+    {
+      "id": "board_minnow",
+      "title": "Bulletin: river minnow",
+      "giver": "juniper",
+      "requires": ["kiko_glasses"],
+      "intro": "Today's notice: Kiko wants a river minnow for the frying pan. Cast from the bank with Go, then bring the catch to Kiko.",
+      "outro": "Kiko is already heating the pan. Quiet work, tasty pay.",
+      "steps": [
+        {"type": "collect", "item": "fish_minnow"},
+        {"type": "deliver", "npc": "kiko", "item": "fish_minnow"}
+      ],
+      "reward": {"coins": 30}
     }
   ]
 }

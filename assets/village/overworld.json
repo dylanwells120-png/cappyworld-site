@@ -68,6 +68,16 @@
       ]
     },
     {
+      "id": "mine",
+      "name": "Crystal mine",
+      "rect": [
+        -120,
+        -80,
+        -55,
+        -20
+      ]
+    },
+    {
       "id": "marsh",
       "name": "Reed marsh",
       "rect": [
@@ -464,15 +474,15 @@
     ],
     "bridges": [
       [
-        -40,
+        -41,
         0.5
       ],
       [
-        -39.5,
+        -40,
         60.5
       ]
     ],
-    "bridge_gap": 3.2
+    "bridge_gap": 4.5
   },
   "forest": {
     "rect": [
@@ -496,10 +506,10 @@
       "from": "world",
       "level": "house",
       "at": [
-        -80,
-        34.6
+        -74.95,
+        40
       ],
-      "radius": 1.4,
+      "radius": 0.9,
       "spawn": [
         0,
         218.6
@@ -517,11 +527,107 @@
       ],
       "radius": 1.15,
       "spawn": [
-        -80,
-        32.4
+        -72.4,
+        40
       ],
-      "heading": 180,
+      "heading": 90,
       "prompt": "Back out to the forest",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "hall",
+      "at": [
+        4,
+        86.85
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        276.6
+      ],
+      "heading": 0,
+      "prompt": "Step into the village hall",
+      "verb": "Enter"
+    },
+    {
+      "from": "hall",
+      "level": "world",
+      "at": [
+        0,
+        275.35
+      ],
+      "radius": 1.15,
+      "spawn": [
+        4,
+        85.7
+      ],
+      "heading": 0,
+      "prompt": "Back out to the square",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "cafe",
+      "at": [
+        18.15,
+        67
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        337.1
+      ],
+      "heading": 0,
+      "prompt": "Step into the café",
+      "verb": "Enter"
+    },
+    {
+      "from": "cafe",
+      "level": "world",
+      "at": [
+        0,
+        335.65
+      ],
+      "radius": 1.15,
+      "spawn": [
+        18.3,
+        67
+      ],
+      "heading": -90,
+      "prompt": "Back out to the square",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "mine",
+      "at": [
+        -86.4,
+        -50
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        394.6
+      ],
+      "heading": 0,
+      "prompt": "Step into the mine",
+      "verb": "Enter"
+    },
+    {
+      "from": "mine",
+      "level": "world",
+      "at": [
+        0,
+        393.25
+      ],
+      "radius": 1.15,
+      "spawn": [
+        -86,
+        -50
+      ],
+      "heading": 90,
+      "prompt": "Back out to the marsh",
       "verb": "Leave"
     }
   ],
@@ -546,12 +652,15 @@
     },
     {
       "id": "forest",
-      "label": "Haunted house path",
+      "label": "Haunted house",
       "at": [
-        -80,
-        34
+        -73,
+        40
       ],
-      "region": "forest"
+      "region": "forest",
+      "unlock_with": [
+        "home"
+      ]
     },
     {
       "id": "meadow",
@@ -597,6 +706,18 @@
         -96
       ],
       "region": "hollow"
+    },
+    {
+      "id": "mine",
+      "label": "Crystal mine",
+      "at": [
+        -86,
+        -46
+      ],
+      "region": "mine",
+      "unlock_with": [
+        "forest"
+      ]
     }
   ],
   "soak_zones": [
@@ -616,20 +737,22 @@
     {
       "file": "village/v_bridge.glb",
       "at": [
-        -40,
+        -41,
         0.5,
         0
       ],
-      "h": 0
+      "h": 0,
+      "s": 2.2
     },
     {
       "file": "village/v_bridge.glb",
       "at": [
-        -39.5,
+        -40,
         60.5,
         0
       ],
-      "h": 0
+      "h": 0,
+      "s": 2.2
     },
     {
       "file": "village/v_manor_exterior.glb",
@@ -638,12 +761,59 @@
         40,
         0
       ],
-      "h": 0,
+      "h": 90,
       "solid": [
-        6.8,
         4.8,
+        6.8,
         4.8
+      ],
+      "solids": [
+        {
+          "at": [
+            -72.21,
+            40,
+            0
+          ],
+          "solid": [
+            0.24,
+            1.4,
+            0.17
+          ]
+        },
+        {
+          "at": [
+            -72.78,
+            40,
+            0
+          ],
+          "solid": [
+            0.33,
+            1.4,
+            0.33
+          ]
+        },
+        {
+          "at": [
+            -74.12,
+            40,
+            0
+          ],
+          "solid": [
+            1.02,
+            2.2,
+            0.48
+          ]
+        }
       ]
+    },
+    {
+      "file": "village/v_signpost.glb",
+      "at": [
+        -73,
+        37,
+        0
+      ],
+      "h": 110
     },
     {
       "file": "village/v_tree_oak.glb",
@@ -788,6 +958,34 @@
         0
       ],
       "h": 35
+    },
+    {
+      "file": "village/v_playhouse.glb",
+      "at": [
+        16,
+        88,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        1.5,
+        1.25,
+        3
+      ]
+    },
+    {
+      "file": "village/v_rowhouse.glb",
+      "at": [
+        -14,
+        88,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        2,
+        1.5,
+        3
+      ]
     },
     {
       "file": "village/v_tree_oak.glb",
@@ -1175,6 +1373,713 @@
         0
       ],
       "h": -30
+    },
+    {
+      "file": "village/v_make_me_an_orange_kitten.glb",
+      "at": [
+        0,
+        0,
+        0
+      ],
+      "h": 0
+    },
+    {
+      "file": "village/v_hall.glb",
+      "at": [
+        4,
+        90,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        2.6,
+        2.2,
+        4
+      ]
+    },
+    {
+      "file": "village/v_cafe.glb",
+      "at": [
+        20,
+        68,
+        0
+      ],
+      "h": -90,
+      "solid": [
+        2,
+        2,
+        3.4
+      ]
+    },
+    {
+      "file": "village/v_mine_exterior.glb",
+      "at": [
+        -90,
+        -50,
+        0
+      ],
+      "h": 90,
+      "solid": [
+        2.6,
+        3.4,
+        4.2
+      ],
+      "solids": [
+        {
+          "at": [
+            -87.2,
+            -50,
+            0
+          ],
+          "solid": [
+            0.42,
+            1.25,
+            0.34
+          ]
+        },
+        {
+          "at": [
+            -86.6,
+            -50,
+            0
+          ],
+          "solid": [
+            0.3,
+            1.05,
+            0.18
+          ]
+        }
+      ]
+    },
+    {
+      "file": "village/v_signpost.glb",
+      "at": [
+        -86,
+        -46,
+        0
+      ],
+      "h": 90
+    },
+    {
+      "file": "village/v_rock.glb",
+      "at": [
+        -96,
+        -44,
+        0
+      ],
+      "h": 25
+    },
+    {
+      "file": "village/v_rock.glb",
+      "at": [
+        -84,
+        -58,
+        0
+      ],
+      "h": -30
+    },
+    {
+      "file": "village/v_reeds.glb",
+      "at": [
+        -78,
+        -42,
+        0
+      ],
+      "h": 15
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        6,
+        -8,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        -8,
+        56,
+        0
+      ],
+      "h": 90
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        74,
+        -8,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        74,
+        62,
+        0
+      ],
+      "h": 180
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        -58,
+        38,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_station.glb",
+      "at": [
+        -84,
+        -52,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        -8,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        1.33,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        10.67,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        20,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        20,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        32,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        44,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        3,
+        48,
+        0
+      ],
+      "h": -126.87
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -4,
+        54,
+        0
+      ],
+      "h": -153.43
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -8,
+        56,
+        0
+      ],
+      "h": -161.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -20,
+        60,
+        0
+      ],
+      "h": -161.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -20,
+        60,
+        0
+      ],
+      "h": -178.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -30,
+        60.25,
+        0
+      ],
+      "h": -178.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -40,
+        60.5,
+        0
+      ],
+      "h": -178.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -40,
+        60.5,
+        0
+      ],
+      "h": 133.83
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -52,
+        48,
+        0
+      ],
+      "h": 133.83
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -52,
+        48,
+        0
+      ],
+      "h": 120.96
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -58,
+        38,
+        0
+      ],
+      "h": 120.96
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -58,
+        38,
+        0
+      ],
+      "h": 101.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -60,
+        28,
+        0
+      ],
+      "h": 101.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -62,
+        18,
+        0
+      ],
+      "h": 101.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -64,
+        8,
+        0
+      ],
+      "h": 101.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -64,
+        8,
+        0
+      ],
+      "h": 104.93
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -66.67,
+        -2,
+        0
+      ],
+      "h": 104.93
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -69.33,
+        -12,
+        0
+      ],
+      "h": 104.93
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -72,
+        -22,
+        0
+      ],
+      "h": 104.93
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -72,
+        -22,
+        0
+      ],
+      "h": 111.8
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -76,
+        -32,
+        0
+      ],
+      "h": 111.8
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -80,
+        -42,
+        0
+      ],
+      "h": 111.8
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -84,
+        -52,
+        0
+      ],
+      "h": 111.8
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -8,
+        56,
+        0
+      ],
+      "h": 45
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        0,
+        48,
+        0
+      ],
+      "h": 45
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        8,
+        40,
+        0
+      ],
+      "h": 45
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        8,
+        40,
+        0
+      ],
+      "h": 56.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        13.33,
+        32,
+        0
+      ],
+      "h": 56.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        18.67,
+        24,
+        0
+      ],
+      "h": 56.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        24,
+        16,
+        0
+      ],
+      "h": 56.31
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        24,
+        16,
+        0
+      ],
+      "h": 33.69
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        32,
+        10.67,
+        0
+      ],
+      "h": 33.69
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        40,
+        5.33,
+        0
+      ],
+      "h": 33.69
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        48,
+        0,
+        0
+      ],
+      "h": 33.69
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        48,
+        0,
+        0
+      ],
+      "h": 17.1
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        56.67,
+        -2.67,
+        0
+      ],
+      "h": 17.1
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        65.33,
+        -5.33,
+        0
+      ],
+      "h": 17.1
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        -8,
+        0
+      ],
+      "h": 17.1
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        -8,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        1,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        10,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        19,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        28,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        28,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        39.33,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        50.67,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        74,
+        62,
+        0
+      ],
+      "h": -90
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        6,
+        -8,
+        0
+      ],
+      "h": -161.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -12,
+        -2,
+        0
+      ],
+      "h": -161.57
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -12,
+        -2,
+        0
+      ],
+      "h": -175.07
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -21.67,
+        -1.17,
+        0
+      ],
+      "h": -175.07
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -31.33,
+        -0.33,
+        0
+      ],
+      "h": -175.07
+    },
+    {
+      "file": "village/v_rail.glb",
+      "at": [
+        -41,
+        0.5,
+        0
+      ],
+      "h": -175.07
     }
   ]
 }

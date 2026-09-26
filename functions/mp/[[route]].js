@@ -1,7 +1,11 @@
 const NAME_MAX = 16;
 const TIMEOUT_MS = 5000;
-const MAX_PLAYERS = 24;
+const MAX_PLAYERS = 50;
 const ROOM_KEY = "park";
+const HEX_FROG_MS = 20000;
+const HEX_FROG_RADIUS = 8;
+const LEVEL_ID = /^[a-z][a-z0-9_]{0,23}$/;
+const MAX_CLOTHES = 16;
 
 function sanitizeName(raw) {
   const text = String(raw || "")
@@ -30,6 +34,23 @@ function num(value, fallback = 0) {
   return Number.isFinite(n) ? n : fallback;
 }
 
+function sanitizeLevel(raw) {
+  return typeof raw === "string" && LEVEL_ID.test(raw) ? raw : "world";
+}
+
+function sanitizeClothes(raw) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  const seen = new Set();
+  for (const entry of raw) {
+    if (out.length >= MAX_CLOTHES) break;
+    if (typeof entry !== "string" || !LEVEL_ID.test(entry) || seen.has(entry)) continue;
+    seen.add(entry);
+    out.push(entry);
+  }
+  return out;
+}
+
 function sanitizePose(raw) {
   const data = raw && typeof raw === "object" ? raw : {};
   return {
@@ -39,11 +60,12 @@ function sanitizePose(raw) {
     h: num(data.h),
     walking: Boolean(data.walking),
     flop: Math.max(0, num(data.flop)),
-    level: data.level === "house" ? "house" : "world",
+    level: sanitizeLevel(data.level),
+    clothes: sanitizeClothes(data.clothes),
   };
 }
 
-function peerPublic(entry) {
+function peerPublic(entry, now) {
   return {
     id: entry.id,
     name: entry.name,
@@ -55,7 +77,26 @@ function peerPublic(entry) {
     walking: entry.walking,
     flop: entry.flop,
     level: entry.level,
+    clothes: Array.isArray(entry.clothes) ? entry.clothes : [],
+    form: (entry.frogUntil || 0) > now ? "frog" : "",
   };
+}
+
+function youPublic(entry, now) {
+  const left = Math.max(0, (entry.frogUntil || 0) - now);
+  return { form: left > 0 ? "frog" : "", frogLeft: left / 1000 };
+}
+
+function hexFrog(peers, caster, now) {
+  for (const peer of Object.values(peers)) {
+    if (!peer || peer.id === caster.id) continue;
+    if ((peer.level || "world") !== (caster.level || "world")) continue;
+    const dx = caster.x - peer.x;
+    const dy = caster.y - peer.y;
+    if (dx * dx + dy * dy <= HEX_FROG_RADIUS * HEX_FROG_RADIUS) {
+      peer.frogUntil = now + HEX_FROG_MS;
+    }
+  }
 }
 
 function prune(peers, now) {
@@ -101,7 +142,7 @@ function upsert(room, raw, now) {
 function others(room, pid) {
   return Object.values(room.peers)
     .filter((e) => e.id !== pid)
-    .map(peerPublic);
+    .map((entry) => peerPublic(entry, Date.now()));
 }
 
 function json(status, payload) {
@@ -155,7 +196,7 @@ export async function onRequest(context) {
     if (up.error) result = up;
     else {
       await saveRoom(env, room);
-      result = { id: up.entry.id, peers: others(room, up.entry.id) };
+      result = { id: up.entry.id, peers: others(room, up.entry.id), you: youPublic(up.entry, now) };
     }
   } else if (method === "POST" && path === "/mp/sync") {
     if (!sanitizeId(body?.id)) result = { error: "missing id", status: 400 };
@@ -163,8 +204,9 @@ export async function onRequest(context) {
       const up = upsert(room, body, now);
       if (up.error) result = up;
       else {
+        if (body?.cast === "frog") hexFrog(room.peers, up.entry, now);
         await saveRoom(env, room);
-        result = { peers: others(room, up.entry.id) };
+        result = { peers: others(room, up.entry.id), you: youPublic(up.entry, now) };
       }
     }
   } else if (method === "POST" && path === "/mp/leave") {

@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#140818">
+  <meta name="theme-color" content="#0c0810">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=15">
+  <link rel="stylesheet" href="../css/play.css?v=26">
 </head>
 <body>
   <canvas id="view"></canvas>
   <div id="hud">
     <div id="score">Ruckus 0</div>
-    <div id="coins">0 coins</div>
+    <div id="coins"><img id="coin-icon" src="/assets/ui/cappycoin.png" alt=""><span id="coins-amt">0 CappyCoin</span></div>
     <div id="where">Park</div>
+    <div id="potion-buff" class="hidden"></div>
     <div id="quest-tracker" class="hidden"></div>
   </div>
   <div id="toolbar">
@@ -24,6 +25,7 @@
     <button id="pause" type="button">Pause</button>
   </div>
   <div id="toast"></div>
+  <div id="bark"></div>
   <div id="quest-arrow" class="hidden" aria-hidden="true"></div>
   <div id="income-markers" aria-hidden="true"></div>
   <div id="load">
@@ -41,13 +43,14 @@
     </aside>
     <h1>CappyWorld</h1>
     <p class="menu-body">Capybara Simulator</p>
-    <button id="play" type="button">Play</button>
-    <button id="clothes" type="button">Clothes</button>
+    <button id="story" type="button">Story mode</button>
+    <button id="multiplayer" type="button">Multiplayer</button>
+    <button id="world" type="button">World</button>
     <p id="menu-version" class="version-tag"></p>
   </div>
   <div id="character" class="sheet hidden">
     <h2>Who are you?</h2>
-    <p>Type a name and pick a capybara. Friends in the park will see you.</p>
+    <p id="character-copy">Type a name and pick a capybara. Friends in the park will see you.</p>
     <label class="char-label" for="character-name">Your name</label>
     <input id="character-name" type="text" maxlength="16" autocomplete="nickname" placeholder="Type a name" enterkeyhint="done" spellcheck="false">
     <p id="character-hint" class="char-hint">Type a name to join the park.</p>
@@ -77,7 +80,7 @@
   </div>
   <div id="build" class="sheet hidden">
     <h2>Build</h2>
-    <p>Pick a building for this plot. Move with the stick, then Place.</p>
+    <p>Move around, then Place. Computer: WASD. iPad: drag the left half of the screen.</p>
     <div id="build-list"></div>
     <button id="build-rotate" type="button">Rotate</button>
     <button id="build-close" type="button">Close</button>
@@ -108,6 +111,7 @@
     <h2>Paused</h2>
     <button id="resume" type="button">Resume</button>
     <button id="pause-clothes" type="button">Clothes</button>
+    <button id="pause-potions" type="button">Potions</button>
     <button id="pause-save" type="button">Save code</button>
     <p id="pause-version" class="version-tag"></p>
   </div>
@@ -123,28 +127,33 @@
   </div>
   <div id="wardrobe" class="sheet hidden">
     <h2>Clothes</h2>
-    <p>Find them, then wear them here.</p>
+    <p>Tap a piece you’ve found to put it on. Hidden outfits stay in shadow until you pick them up.</p>
     <div id="outfit-list"></div>
     <button id="clothes-back" type="button">Back</button>
   </div>
+  <div id="potion-bag" class="sheet hidden">
+    <h2>Potions</h2>
+    <p>Find bottles in the haunted house, then drink them here.</p>
+    <div id="potion-list"></div>
+    <button id="potions-back" type="button">Back</button>
+  </div>
+  <div id="destination" class="sheet hidden">
+    <h2>Where to?</h2>
+    <p>Pick a place you’ve discovered. The train follows the rails.</p>
+    <div id="dest-list" class="dest-list"></div>
+    <button id="dest-close" type="button">Close</button>
+  </div>
+  <div id="keys-hint">WASD move · drag to look · Space hop · F flop · E talk · Ride the broom by the yard</div>
   <div id="rotate">Turn the iPad sideways</div>
-  <div id="controls">
-    <div class="pad">
-      <div class="stick" id="stick" aria-label="Move"><div class="knob" id="knob"></div></div>
-      <span>Move</span>
-    </div>
-    <div id="right-controls">
-      <div class="pad">
-        <div class="stick" id="look" aria-label="Look"><div class="knob" id="look-knob"></div></div>
-        <span>Look</span>
-      </div>
-      <div id="actions">
-        <button id="hop" type="button">Hop</button>
-        <button id="flop" type="button">Flop</button>
-        <button id="go" type="button">Go</button>
-      </div>
+  <div id="controls" aria-hidden="true">
+    <div id="touch-move" class="touch-zone" aria-label="Move"></div>
+    <div id="touch-look" class="touch-zone" aria-label="Look"></div>
+    <div id="actions">
+      <button id="hop" type="button">Hop</button>
+      <button id="flop" type="button">Flop</button>
+      <button id="go" type="button">Go</button>
     </div>
   </div>
-  <script src="../dist/game.js?v=aeae92a2f4"></script>
+  <script src="../dist/game.js?v=56f971d64c"></script>
 </body>
 </html>

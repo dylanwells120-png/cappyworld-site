@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kinds": [
+    {
+      "id": "bounce",
+      "label": "Bounce brew",
+      "hint": "Hops go much higher.",
+      "color": "#7dff6a",
+      "effect": "bounce",
+      "duration": 22
+    },
+    {
+      "id": "swift",
+      "label": "Swift draught",
+      "hint": "Run like the wind.",
+      "color": "#ffb347",
+      "effect": "swift",
+      "duration": 22
+    },
+    {
+      "id": "glow",
+      "label": "Glimmer tonic",
+      "hint": "A soft light follows you.",
+      "color": "#c9a0ff",
+      "effect": "glow",
+      "duration": 30
+    },
+    {
+      "id": "float",
+      "label": "Cloud sip",
+      "hint": "Gravity goes gentle.",
+      "color": "#7ecbff",
+      "effect": "float",
+      "duration": 16
+    },
+    {
+      "id": "frog",
+      "label": "Ribbit hex",
+      "hint": "Nearby friends turn into frogs.",
+      "color": "#3cb371",
+      "effect": "hex_frog",
+      "duration": 20
+    }
+  ],
+  "bottles": [
+    { "id": "bounce_cauldron", "potion": "bounce", "level": "house", "at": [4.7, 222.15] },
+    { "id": "bounce_hearth", "potion": "bounce", "level": "house", "at": [1.15, 223.35] },
+    { "id": "swift_table", "potion": "swift", "level": "house", "at": [-3.85, 217.55] },
+    { "id": "glow_shelf", "potion": "glow", "level": "house", "at": [3.25, 223.45] },
+    { "id": "float_corner", "potion": "float", "level": "house", "at": [5.85, 216.55] },
+    { "id": "frog_shelf", "potion": "frog", "level": "house", "at": [2.15, 223.85] }
+  ]
+}

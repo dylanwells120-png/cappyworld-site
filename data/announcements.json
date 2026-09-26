@@ -1,11 +1,24 @@
 {
   "announcements": [
     {
+      "id": "village-life-034",
+      "kind": "note",
+      "title": "Story, friends, and the world",
+      "date": "September 26, 2026",
+      "featured": true,
+      "summary": "Version 0.3.4 opens Story mode, a shared park, and a world of countries. Ride the train, cast a line, and try a potion.",
+      "body": [
+        "The menu now has three doors. Story mode is the village. Multiplayer is the same park with friends. World sends you to a country, with its own plants, animals, and a short quest.",
+        "In Story, the train runs between places you have found. Stand on the river bank and cast a line. Potions wait in the haunted house. A broom sits by the yard when you want to fly.",
+        "Friends in the park wear the clothes they have on. If the lobby cannot be reached, the game still works on your own. Clothes, coins, and quests stay in this browser. Pause, then Save code, if you want a copy you can paste back later."
+      ]
+    },
+    {
       "id": "halloween-live",
       "kind": "live-event",
       "title": "Halloween Live Event",
       "date": "October 1 \u2013 November 7",
-      "featured": true,
+      "featured": false,
       "summary": "The village sky turns Halloween dusk. The haunted house and the pumpkin meadow are waiting.",
       "body": [
         "From October 1 through November 7, CappyWorld wears its Halloween light: a purple-orange dusk, stars a little earlier, and the same soft park you already know. It is the season already built into the game, not a separate mode.",

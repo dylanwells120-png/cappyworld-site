@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "id": "hall",
+      "name": "Village hall",
+      "origin": [0, 280],
+      "half": [6, 5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.024
+    },
+    {
+      "id": "cafe",
+      "name": "Café",
+      "origin": [0, 340],
+      "half": [5, 4.5],
+      "inset": 0.55,
+      "cam_back": 2.6,
+      "cam_up": 1.45,
+      "fog": 0.02
+    },
+    {
+      "id": "mine",
+      "name": "Crystal mine",
+      "origin": [0, 400],
+      "half": [8, 7],
+      "inset": 0.7,
+      "cam_back": 3.4,
+      "cam_up": 1.6,
+      "fog": 0.05
+    }
+  ],
+  "dress": [
+    {"file": "manor_table.glb", "at": [0, 283.6, 0], "h": 180, "level": "hall", "solid": [0.7, 0.55, 0.8]},
+    {"file": "manor_armchair.glb", "at": [-2.1, 283.4, 0], "h": 200, "level": "hall", "solid": [0.5, 0.48, 1.18]},
+    {"file": "manor_bookshelf.glb", "at": [4.6, 284.55, 0], "h": 180, "level": "hall", "solid": [0.81, 0.23, 2.29]},
+    {"file": "village/v_notice_board.glb", "at": [0, 284.7, 0], "h": 180, "level": "hall"},
+    {"file": "village/v_bench.glb", "at": [-4.2, 278.2, 0], "h": 90, "level": "hall", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_bench.glb", "at": [4.2, 278.2, 0], "h": -90, "level": "hall", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_bench.glb", "at": [-4.2, 281.4, 0], "h": 90, "level": "hall", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_bench.glb", "at": [4.2, 281.4, 0], "h": -90, "level": "hall", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_lantern.glb", "at": [-5.2, 276.4, 0], "h": 0, "level": "hall"},
+    {"file": "village/v_lantern.glb", "at": [5.2, 276.4, 0], "h": 0, "level": "hall"},
+    {"file": "village/v_lantern.glb", "at": [0, 284.2, 0], "h": 180, "level": "hall"},
+    {"file": "manor_table.glb", "at": [-2.4, 339.2, 0], "h": 15, "level": "cafe", "solid": [0.6, 0.6, 0.8]},
+    {"file": "manor_table.glb", "at": [2.3, 339.0, 0], "h": -20, "level": "cafe", "solid": [0.6, 0.6, 0.8]},
+    {"file": "manor_table.glb", "at": [0.1, 342.4, 0], "h": 180, "level": "cafe", "solid": [0.6, 0.6, 0.8]},
+    {"file": "village/v_bench.glb", "at": [-2.4, 338.1, 0], "h": 0, "level": "cafe", "solid": [0.5, 0.2, 0.42]},
+    {"file": "village/v_bench.glb", "at": [2.3, 337.9, 0], "h": 0, "level": "cafe", "solid": [0.5, 0.2, 0.42]},
+    {"file": "village/v_bench.glb", "at": [0.1, 343.5, 0], "h": 180, "level": "cafe", "solid": [0.5, 0.2, 0.42]},
+    {"file": "village/v_lantern.glb", "at": [-4.3, 336.4, 0], "h": 0, "level": "cafe"},
+    {"file": "village/v_lantern.glb", "at": [4.3, 336.4, 0], "h": 0, "level": "cafe"},
+    {"file": "village/v_lantern.glb", "at": [0, 344.1, 0], "h": 180, "level": "cafe"},
+    {"file": "village/v_rock.glb", "at": [-5.4, 396.2, 0], "h": 20, "level": "mine", "solid": [0.55, 0.5, 0.7]},
+    {"file": "village/v_rock.glb", "at": [5.8, 397.4, 0], "h": -40, "level": "mine", "solid": [0.55, 0.5, 0.7]},
+    {"file": "village/v_rock.glb", "at": [-3.2, 404.6, 0], "h": 70, "level": "mine", "solid": [0.55, 0.5, 0.7]},
+    {"file": "village/v_rock.glb", "at": [4.1, 405.2, 0], "h": 12, "level": "mine", "solid": [0.55, 0.5, 0.7]},
+    {"file": "village/v_rock.glb", "at": [0.6, 402.8, 0], "h": -15, "level": "mine", "solid": [0.45, 0.4, 0.55]},
+    {"file": "crate.glb", "at": [-6.2, 398.4, 0], "h": 18, "level": "mine", "solid": [0.4, 0.4, 0.56]},
+    {"file": "crate.glb", "at": [-6.2, 398.4, 0.56], "h": -8, "level": "mine", "solid": [0.4, 0.4, 0.56]},
+    {"file": "crate.glb", "at": [6.4, 399.2, 0], "h": 40, "level": "mine", "solid": [0.4, 0.4, 0.56]},
+    {"file": "village/v_lantern.glb", "at": [-2.8, 394.8, 0], "h": 0, "level": "mine"},
+    {"file": "village/v_lantern.glb", "at": [2.8, 394.8, 0], "h": 0, "level": "mine"},
+    {"file": "village/v_lantern.glb", "at": [0, 405.6, 0], "h": 180, "level": "mine"},
+    {"file": "village/v_rail.glb", "at": [0, 400, 0], "h": -90, "level": "mine"}
+  ],
+  "lights": [
+    {"level": "hall", "at": [0, 280.4, 1.9], "color": "#ffd4a0", "intensity": 10.0, "distance": 10.0, "flicker": false},
+    {"level": "hall", "at": [-3.4, 283.2, 1.2], "color": "#ffc27a", "intensity": 4.5, "distance": 6.0, "flicker": false},
+    {"level": "cafe", "at": [0, 340.2, 1.85], "color": "#ffc8a0", "intensity": 11.0, "distance": 9.5, "flicker": false},
+    {"level": "cafe", "at": [2.2, 338.8, 1.1], "color": "#ffb070", "intensity": 4.0, "distance": 5.5, "flicker": false},
+    {"level": "mine", "at": [0, 399.5, 1.7], "color": "#c8a070", "intensity": 3.6, "distance": 8.0, "flicker": true},
+    {"level": "mine", "at": [-3.2, 395.4, 1.1], "color": "#ff8a3a", "intensity": 5.5, "distance": 6.5, "flicker": true},
+    {"level": "mine", "at": [3.4, 404.8, 1.15], "color": "#7dff6a", "intensity": 2.8, "distance": 5.0, "flicker": true}
+  ]
+}

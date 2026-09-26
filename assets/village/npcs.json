@@ -10,9 +10,27 @@
       "spot": {"level": "world", "at": [2, 62], "h": 200},
       "schedule": [
         {"start": 6, "end": 20, "at": [2, 62], "h": 200, "state": "wander"},
-        {"start": 20, "end": 6, "at": [2, 72], "h": 0, "state": "sleep"}
+        {"start": 20, "end": 6, "at": [4, 85.35], "h": 180, "state": "sleep"}
       ],
       "idle": ["Lovely day for a stroll.", "The notice board has news.", "Mochi, welcome back to the square."],
+      "party": ["What a marvelous costume party!", "The lanterns make your yard feel magical.", "Stay for one more dance, Mochi."],
+      "barks": [
+        {"text": "Mochi, welcome back to the square."},
+        {"text": "The lanes are sleeping. Walk softly.", "hours": [20, 6]},
+        {"text": "There you are, hero of the village.", "flag": "village_hero"}
+      ],
+      "topics": [
+        {"id": "lanes", "label": "The square", "lines": [
+          {"text": "The lanterns mark the loop. North to the board, south toward home."},
+          {"text": "Night watch is quiet. The board can wait until dawn.", "hours": [20, 6]}
+        ]},
+        {"id": "neighbours", "label": "Neighbours", "quest_done": "yuzu_village", "lines": [
+          {"text": "Pip hops, Momo bakes, Juniper posts. Say hello when you pass."}
+        ]},
+        {"id": "thanks", "label": "Your thanks", "flag": "village_hero", "lines": [
+          {"text": "You helped every neighbour. The square feels safer with you in it."}
+        ]}
+      ],
       "requires": null
     },
     {
@@ -24,9 +42,27 @@
       "spot": {"level": "world", "at": [-6, 72], "h": 30},
       "schedule": [
         {"start": 5, "end": 18, "at": [-6, 72], "h": 30, "state": "idle"},
-        {"start": 18, "end": 5, "at": [-8, 76], "h": 120, "state": "sleep"}
+        {"start": 18, "end": 5, "at": [-14, 85.6], "h": 180, "state": "sleep"}
       ],
       "idle": ["Fresh bread smells best at dawn.", "Have you tried the bench by the lantern?"],
+      "party": ["Pumpkin bread for everyone!", "I brought cinnamon cocoa in a thermos.", "Your ghost sheet is adorable."],
+      "barks": [
+        {"text": "The oven's warm. Stay a minute."},
+        {"text": "Dough's sleeping. Come back at dawn.", "hours": [18, 5]},
+        {"text": "My cottage smells like cinnamon now.", "flag": "cottage_built"}
+      ],
+      "topics": [
+        {"id": "bread", "label": "The oven", "lines": [
+          {"text": "Cinnamon first, then the stew carrot. Don't rush a loaf."},
+          {"text": "I punch dough at first light. That's the secret.", "hours": [5, 9]}
+        ]},
+        {"id": "bench", "label": "The bench", "lines": [
+          {"text": "The lantern bench is the best seat in the square. Bring a bun."}
+        ]},
+        {"id": "cottage", "label": "The cottage", "flag": "cottage_built", "lines": [
+          {"text": "Sable's roof doesn't leak. I sleep with the window toward the path."}
+        ]}
+      ],
       "requires": null
     },
     {
@@ -38,9 +74,25 @@
       "spot": {"level": "world", "at": [10, 60], "h": -40},
       "schedule": [
         {"start": 7, "end": 19, "at": [10, 60], "h": -40, "state": "wander"},
-        {"start": 19, "end": 7, "at": [4, 68], "h": 90, "state": "sleep"}
+        {"start": 19, "end": 7, "at": [16, 85.85], "h": 180, "state": "sleep"}
       ],
       "idle": ["Bet I can hop higher than you!", "I found a shiny pebble over there."],
+      "party": ["Trick or treat! Smell my candy bag!", "Knock over three pumpkins for extra ruckus!", "Want a spooky sticker? I hid one by the hay."],
+      "barks": [
+        {"text": "Race you to the lantern!"},
+        {"text": "I'm supposed to be asleep… hi anyway.", "hours": [19, 7]}
+      ],
+      "topics": [
+        {"id": "hop", "label": "Hopping", "lines": [
+          {"text": "If you flop right after a hop you bounce twice. I counted."}
+        ]},
+        {"id": "pebble", "label": "Pebbles", "quest_done": "pip_pebble", "lines": [
+          {"text": "My smooth pebble lives in my pocket now. Don't tell Yuzu I lick it."}
+        ]},
+        {"id": "ruckus", "label": "Ruckus", "quest_done": "pip_ruckus", "lines": [
+          {"text": "Three crates in a row! I'm still grinning. Let's mess up the park later."}
+        ]}
+      ],
       "requires": null
     },
     {
@@ -51,6 +103,22 @@
       "scale": 0.95,
       "spot": {"level": "world", "at": [82, 4], "h": 270},
       "idle": ["The meadow pumpkins are almost ready.", "Mind the mud near the river."],
+      "party": ["I carved smiley faces on the big pumpkins.", "The scarecrow is just for fun, promise!", "Take a ghost sheet from the fence."],
+      "barks": [
+        {"text": "Mind the mud, Mochi."},
+        {"text": "Juniper's parcel had the seed list. Thank you.", "quest_done": "juniper_parcel"}
+      ],
+      "topics": [
+        {"id": "pumpkins", "label": "Pumpkins", "lines": [
+          {"text": "The meadow pumpkins like sun and a little gossip. I talk to them."}
+        ]},
+        {"id": "meadow", "label": "The patch", "quest_done": "hana_meadow", "lines": [
+          {"text": "You checked the frost for me. The vines are stretching east now."}
+        ]},
+        {"id": "seeds", "label": "The parcel", "quest_done": "juniper_parcel", "lines": [
+          {"text": "That catalogue is a treasure. Next season I'll try the striped squash."}
+        ]}
+      ],
       "requires": {"quest_done": "yuzu_village"}
     },
     {
@@ -61,6 +129,23 @@
       "scale": 1.0,
       "spot": {"level": "world", "at": [-70, -8], "h": 90},
       "idle": ["The reeds hide the best minnows.", "Quiet steps, Mochi."],
+      "barks": [
+        {"text": "Quiet steps. The minnows scare easy."}
+      ],
+      "topics": [
+        {"id": "reeds", "label": "The reeds", "lines": [
+          {"text": "Stand still and the river tells you where the minnows hide."}
+        ]},
+        {"id": "glasses", "label": "Spectacles", "quest_done": "kiko_glasses", "lines": [
+          {"text": "I can read the ripples again. Next time I'll tie them to my hat."}
+        ]},
+        {"id": "fishing", "label": "Fishing", "lines": [
+          {"text": "Stand on the bank and cast with Go. Minnows, silver fish, lazy carp — the river chooses."}
+        ]},
+        {"id": "catch", "label": "Your catch", "quest_done": "kiko_catch", "lines": [
+          {"text": "That silver fish was perfect. The reeds approve of your quiet paws."}
+        ]}
+      ],
       "requires": {"quest_done": "pip_pebble"}
     },
     {
@@ -71,6 +156,18 @@
       "scale": 1.02,
       "spot": {"level": "world", "at": [78, 68], "h": 180},
       "idle": ["The springs steam nicest at dusk.", "Soak your paws when you can."],
+      "barks": [
+        {"text": "Steam's up. Paws in when you like."},
+        {"text": "Dusk makes the water gold.", "hours": [17, 20]}
+      ],
+      "topics": [
+        {"id": "soak", "label": "Soaking", "lines": [
+          {"text": "Stay until your whiskers droop. That's how you know it's working."}
+        ]},
+        {"id": "springs", "label": "The springs", "quest_done": "tofu_springs", "lines": [
+          {"text": "You soaked like a local. Come back when the east road is dusty."}
+        ]}
+      ],
       "requires": {"quest_done": "hana_meadow"}
     },
     {
@@ -85,6 +182,22 @@
         {"start": 21, "end": 7, "at": [-18, 84], "h": 90, "state": "sleep"}
       ],
       "idle": ["The board gets a new notice every morning.", "Parcels, notices, gossip. I carry all three.", "Come back tomorrow for a fresh job."],
+      "party": ["I delivered extra candy!", "The cobweb cape by the gate is free to wear.", "Dance like a bat!"],
+      "barks": [
+        {"text": "Board's got a notice if you need a job."},
+        {"text": "I hang the last notice at dusk. Sleep well.", "hours": [21, 7]}
+      ],
+      "topics": [
+        {"id": "board", "label": "The board", "lines": [
+          {"text": "A new job every morning. Read it here or ask me — I posted it."}
+        ]},
+        {"id": "parcels", "label": "Parcels", "lines": [
+          {"text": "Parcels, notices, gossip. I carry all three, usually in that order."}
+        ]},
+        {"id": "hana", "label": "Hana's parcel", "quest_done": "juniper_parcel", "lines": [
+          {"text": "Hana got her seed catalogue. You run faster than my cart."}
+        ]}
+      ],
       "requires": {"quest_done": "yuzu_village"}
     },
     {
@@ -99,7 +212,104 @@
         {"start": 20, "end": 6, "at": [18, -22], "h": 270, "state": "sleep"}
       ],
       "idle": ["Good land down here. Cheap, too.", "Measure twice, hammer once.", "A cottage first. Then we talk cafés."],
+      "barks": [
+        {"text": "Measure twice, Mochi."},
+        {"text": "Hammer's down. Talk in the morning.", "hours": [20, 6]},
+        {"text": "That cottage sits true. Proud of you.", "flag": "cottage_built"}
+      ],
+      "topics": [
+        {"id": "land", "label": "The plots", "lines": [
+          {"text": "South meadow is flat and dry. Buy a sign, then we raise a roof."}
+        ]},
+        {"id": "cottage", "label": "Roofs", "quest_done": "sable_cottage", "lines": [
+          {"text": "Momo's flour sacks are already inside. Door toward the path was the right call."}
+        ]},
+        {"id": "market", "label": "Business", "quest_done": "sable_market", "lines": [
+          {"text": "A stall and a second plot. The valley will shop here. Café when you're ready."}
+        ]}
+      ],
       "requires": {"quest_done": "pip_ruckus"}
+    },
+    {
+      "id": "porter",
+      "name": "Porter",
+      "role": "conductor",
+      "tint": "#6b7c8a",
+      "scale": 1.02,
+      "spot": {"level": "world", "at": [-6, 56], "h": 90},
+      "schedule": [
+        {"start": 6, "end": 21, "at": [-6, 56], "h": 90, "state": "idle"},
+        {"start": 21, "end": 6, "at": [-10, 58], "h": 180, "state": "sleep"}
+      ],
+      "idle": ["All aboard — when you're ready.", "Meadow line runs east from here.", "Keep clear of the rails, paws."],
+      "barks": [
+        {"text": "Platform's clear. Pick a stop."},
+        {"text": "Last train's tucked in. Morning runs start at dawn.", "hours": [21, 6]}
+      ],
+      "topics": [
+        {"id": "train", "label": "The train", "lines": [
+          {"text": "Board here, pick a destination, and hop off when we stop. No swimming required."}
+        ]},
+        {"id": "lines", "label": "The lines", "quest_done": "porter_first_ride", "lines": [
+          {"text": "West to forest and mine, east to meadow and springs. Junction is under your feet."}
+        ]}
+      ],
+      "requires": {"quest_done": "yuzu_welcome"}
+    },
+    {
+      "id": "nori",
+      "name": "Nori",
+      "role": "miner",
+      "tint": "#8a7355",
+      "scale": 1.0,
+      "spot": {"level": "world", "at": [-86, -48], "h": 180},
+      "schedule": [
+        {"start": 7, "end": 19, "at": [-86, -48], "h": 180, "state": "idle"},
+        {"start": 19, "end": 7, "at": [-84, -44], "h": 90, "state": "sleep"}
+      ],
+      "idle": ["Watch your head in the shaft.", "Ore sings if you listen.", "Lantern first, then the pick."],
+      "barks": [
+        {"text": "Mine mouth's open. Mind the steps."},
+        {"text": "Shaft's dark. Come back with daylight.", "hours": [19, 7]}
+      ],
+      "topics": [
+        {"id": "mine", "label": "The mine", "lines": [
+          {"text": "Portal's right on the mouth. Ore sits near the entrance; lanterns farther in."}
+        ]},
+        {"id": "ore", "label": "Ore", "quest_done": "nori_ore", "lines": [
+          {"text": "That chunk you pulled will keep Sable happy for a week."}
+        ]}
+      ],
+      "requires": {"quest_done": "yuzu_village"}
+    },
+    {
+      "id": "biscuit",
+      "name": "Biscuit",
+      "role": "baker",
+      "tint": "#e0b888",
+      "scale": 0.97,
+      "spot": {"level": "world", "at": [16, 70], "h": -90},
+      "schedule": [
+        {"start": 5, "end": 19, "at": [16, 70], "h": -90, "state": "idle"},
+        {"start": 19, "end": 5, "at": [16, 70], "h": -90, "state": "sleep"}
+      ],
+      "idle": ["Flour on my whiskers means the oven is honest.", "Pastries taste better after a café visit."],
+      "barks": [
+        {"text": "Smell that crust? Fresh as the square."},
+        {"text": "Dough rests overnight. Come back at dawn.", "hours": [19, 5]}
+      ],
+      "topics": [
+        {"id": "oven", "label": "The oven", "lines": [
+          {"text": "Momo taught me the cinnamon trick. I just keep the fire steady."}
+        ]},
+        {"id": "cafe", "label": "The café", "quest_done": "biscuit_cafe", "lines": [
+          {"text": "You sat under the café lanterns. Next time try the pastry tray."}
+        ]},
+        {"id": "pastry", "label": "Pastries", "quest_done": "biscuit_pastry", "lines": [
+          {"text": "That warm pastry found the right paws. Come back when the tray is full again."}
+        ]}
+      ],
+      "requires": {"quest_done": "momo_bread"}
     }
   ]
 }
