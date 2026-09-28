@@ -990,8 +990,8 @@
     {
       "file": "village/v_tree_oak.glb",
       "at": [
-        72,
-        -8,
+        78,
+        -12,
         0
       ],
       "h": 12
@@ -1053,7 +1053,7 @@
     {
       "file": "village/v_garden.glb",
       "at": [
-        5,
+        3,
         0,
         0
       ],
@@ -1490,17 +1490,8 @@
     {
       "file": "village/v_station.glb",
       "at": [
-        6,
+        4.4,
         -8,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_station.glb",
-      "at": [
-        -8,
-        56,
         0
       ],
       "h": 90
@@ -1508,578 +1499,47 @@
     {
       "file": "village/v_station.glb",
       "at": [
-        74,
-        -8,
+        -6.87,
+        57.13,
         0
       ],
-      "h": -90
+      "h": -45
     },
     {
       "file": "village/v_station.glb",
       "at": [
-        74,
-        62,
+        73.53,
+        -9.53,
         0
       ],
-      "h": 180
+      "h": 162.88
     },
     {
       "file": "village/v_station.glb",
       "at": [
-        -58,
-        38,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_station.glb",
-      "at": [
-        -84,
-        -52,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        -8,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        1.33,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        10.67,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        20,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        20,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        32,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        6,
-        44,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        3,
-        48,
-        0
-      ],
-      "h": -126.87
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -4,
-        54,
-        0
-      ],
-      "h": -153.43
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -8,
-        56,
-        0
-      ],
-      "h": -161.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -20,
-        60,
-        0
-      ],
-      "h": -161.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -20,
-        60,
-        0
-      ],
-      "h": -178.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -30,
-        60.25,
-        0
-      ],
-      "h": -178.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -40,
-        60.5,
-        0
-      ],
-      "h": -178.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -40,
-        60.5,
-        0
-      ],
-      "h": 133.83
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -52,
-        48,
-        0
-      ],
-      "h": 133.83
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -52,
-        48,
-        0
-      ],
-      "h": 120.96
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -58,
-        38,
-        0
-      ],
-      "h": 120.96
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -58,
-        38,
-        0
-      ],
-      "h": 101.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -60,
-        28,
-        0
-      ],
-      "h": 101.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -62,
-        18,
-        0
-      ],
-      "h": 101.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -64,
-        8,
-        0
-      ],
-      "h": 101.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -64,
-        8,
-        0
-      ],
-      "h": 104.93
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -66.67,
-        -2,
-        0
-      ],
-      "h": 104.93
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -69.33,
-        -12,
-        0
-      ],
-      "h": 104.93
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -72,
-        -22,
-        0
-      ],
-      "h": 104.93
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -72,
-        -22,
-        0
-      ],
-      "h": 111.8
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -76,
-        -32,
-        0
-      ],
-      "h": 111.8
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -80,
-        -42,
-        0
-      ],
-      "h": 111.8
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -84,
-        -52,
-        0
-      ],
-      "h": 111.8
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -8,
-        56,
-        0
-      ],
-      "h": 45
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        0,
-        48,
-        0
-      ],
-      "h": 45
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        8,
-        40,
-        0
-      ],
-      "h": 45
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        8,
-        40,
-        0
-      ],
-      "h": 56.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        13.33,
-        32,
-        0
-      ],
-      "h": 56.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        18.67,
-        24,
-        0
-      ],
-      "h": 56.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        24,
-        16,
-        0
-      ],
-      "h": 56.31
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        24,
-        16,
-        0
-      ],
-      "h": 33.69
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        32,
-        10.67,
-        0
-      ],
-      "h": 33.69
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        40,
-        5.33,
-        0
-      ],
-      "h": 33.69
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        48,
-        0,
-        0
-      ],
-      "h": 33.69
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        48,
-        0,
-        0
-      ],
-      "h": 17.1
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        56.67,
-        -2.67,
-        0
-      ],
-      "h": 17.1
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        65.33,
-        -5.33,
-        0
-      ],
-      "h": 17.1
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        -8,
-        0
-      ],
-      "h": 17.1
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        -8,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        1,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        10,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        19,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        28,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        28,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        39.33,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
-        50.67,
-        0
-      ],
-      "h": -90
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        74,
+        75.6,
         62,
         0
       ],
       "h": -90
     },
     {
-      "file": "village/v_rail.glb",
+      "file": "village/v_station.glb",
       "at": [
-        6,
-        -8,
+        -59.57,
+        38.31,
         0
       ],
-      "h": -161.57
+      "h": 78.69
     },
     {
-      "file": "village/v_rail.glb",
+      "file": "village/v_station.glb",
       "at": [
-        -12,
-        -2,
+        -85.49,
+        -51.41,
         0
       ],
-      "h": -161.57
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -12,
-        -2,
-        0
-      ],
-      "h": -175.07
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -21.67,
-        -1.17,
-        0
-      ],
-      "h": -175.07
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -31.33,
-        -0.33,
-        0
-      ],
-      "h": -175.07
-    },
-    {
-      "file": "village/v_rail.glb",
-      "at": [
-        -41,
-        0.5,
-        0
-      ],
-      "h": -175.07
+      "h": 68.2
     }
   ]
 }
