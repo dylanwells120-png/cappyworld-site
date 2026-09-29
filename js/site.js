@@ -13,19 +13,36 @@ function el(tag, className, text) {
 
 function badgeLabel(kind) {
   if (kind === "live-event") return "Live event";
+  if (kind === "coming-soon") return "Coming soon";
   return "Note";
 }
+
+function badgeClass(kind) {
+  if (kind === "live-event") return "badge";
+  if (kind === "coming-soon") return "badge soon";
+  return "badge note";
+}
+
+// Image paths in announcements.json are relative to the site root.
+const siteRoot = (document.body.dataset.announcements || "").replace(/data\/announcements\.json$/, "");
 
 function renderAnnouncement(item, { summaryOnly = false } = {}) {
   const card = el("article", item.featured ? "announce featured" : "announce");
   card.id = item.id;
   const meta = el("p", "announce-meta");
-  const badge = el("span", item.kind === "live-event" ? "badge" : "badge note", badgeLabel(item.kind));
+  const badge = el("span", badgeClass(item.kind), badgeLabel(item.kind));
   meta.append(badge);
   if (item.date) meta.append(el("time", null, item.date));
   card.append(meta, el("h2", null, item.title));
   if (item.summary) card.append(el("p", "summary", item.summary));
   if (!summaryOnly) {
+    if (item.image) {
+      const img = el("img", "announce-image");
+      img.src = siteRoot + item.image;
+      img.alt = item.imageAlt || "";
+      img.loading = "lazy";
+      card.append(img);
+    }
     for (const paragraph of item.body || []) card.append(el("p", null, paragraph));
   }
   return card;

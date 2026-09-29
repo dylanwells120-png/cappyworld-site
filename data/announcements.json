@@ -1,14 +1,82 @@
 {
   "announcements": [
     {
+      "id": "broom-flight",
+      "kind": "note",
+      "title": "Fly the broom",
+      "date": "September 28, 2026",
+      "featured": true,
+      "summary": "Broom flight is rebuilt as smooth arcade flying, and your capybara now sits astride the broom like a proper rider.",
+      "image": "gallery/broom-flight.jpg",
+      "imageAlt": "Mochi the capybara sitting astride the broom, flying low over the path by home",
+      "body": [
+        "The broom waits right next to you when you start. Press E to hop on. W and S set your speed, A and D turn, Space climbs, and Shift or C takes you down. Press E again to hop off.",
+        "The broom never drops out of the sky. It leans into turns and tips its nose up when you climb. Let go of W and it glides gently to a stop in the air, so you can look around before you choose where to land."
+      ]
+    },
+    {
+      "id": "sky-display",
+      "kind": "note",
+      "title": "Day, night, and the weather",
+      "date": "September 28, 2026",
+      "featured": false,
+      "summary": "A new sky display at the top of the screen shows the sun or moon, the time of day, the weather, and the season.",
+      "image": "gallery/sky-display-night.jpg",
+      "imageAlt": "Night in Mochi's home park, with the sky display at the top showing the moon, 9:36 PM, clear, and autumn",
+      "body": [
+        "Look to the top center of the screen. The sun or the moon tells you if it is day or night, with the time beside it and a little track that fills as the day goes by. Next to that are the weather and the season.",
+        "A whole day and night goes by in about twenty minutes. Every so often the weather turns: clear, cloudy, rain, storm, snow, or fog. Storms flash with lightning. Snow only falls in winter.",
+        "The season follows the calendar, so the village is in autumn right now. In the shared park, everyone sees the same sky at the same moment."
+      ]
+    },
+    {
+      "id": "rail-line",
+      "kind": "note",
+      "title": "All aboard the new rail line",
+      "date": "September 28, 2026",
+      "featured": false,
+      "summary": "The train tracks are rebuilt as one clean, connected line between all six stations.",
+      "image": "gallery/train-on-bridge.jpg",
+      "imageAlt": "The little red train crossing the wooden bridge over the river",
+      "body": [
+        "The rails now run unbroken from station to station: Home, Village, Meadow, Hot springs, Forest, and the Mine. The line crosses the river on the bridge, and buffer stops mark the end of the line.",
+        "Walk up to a station and press E to pick where to go. Every station you have found is a stop. On the way, press E to hop off at the next station."
+      ]
+    },
+    {
+      "id": "studio-windows",
+      "kind": "note",
+      "title": "New rooms in the workshop",
+      "date": "September 28, 2026",
+      "featured": false,
+      "summary": "CappyEngine Studio, the editor the village is built in, has new Outfit Studio and Building Studio windows.",
+      "body": [
+        "Outfit Studio lists the clothes, shows them on a capybara, and lets each piece be nudged until it fits. Building Studio draws a building's walls, doors, and rooms from above and shows the furnished inside.",
+        "The whole editor has a cleaner look, too. These are the tools the village is made with, not something you need to play."
+      ]
+    },
+    {
+      "id": "coming-soon",
+      "kind": "coming-soon",
+      "title": "On the way",
+      "date": "September 28, 2026",
+      "featured": false,
+      "summary": "Sound and music that follow the weather, a softer glowing look, snowy winters, and new buildings to walk into.",
+      "body": [
+        "Sound and music are coming, with ambience that follows the weather and the time of day.",
+        "So is a graphics pass: a warm glow, softer shadows, and colors that shift with the time of day. The Map window is getting a globe, and in winter the ground and the roofs will turn snowy.",
+        "The town is growing too. A school, a hospital, shops, and fire and police stations are on the way, and you will be able to walk inside them."
+      ]
+    },
+    {
       "id": "village-life-034",
       "kind": "note",
       "title": "Story, friends, and the world",
       "date": "September 26, 2026",
-      "featured": true,
+      "featured": false,
       "summary": "Version 0.3.4 opens Story mode, a shared park, and a world of countries. Ride the train, cast a line, and try a potion.",
       "body": [
-        "The menu now has three doors. Story mode is the village. Multiplayer is the same park with friends. World sends you to a country, with its own plants, animals, and a short quest.",
+        "The menu now has three doors. Story mode is the village. Multiplayer is the same park with friends. World opens on a globe of the Earth painted from NASA Blue Marble imagery. Spin it, zoom in, and pick a country, with its own plants, animals, and a short quest.",
         "In Story, the train runs between places you have found. Stand on the river bank and cast a line. Potions wait in the haunted house. A broom sits by the yard when you want to fly.",
         "Friends in the park wear the clothes they have on. If the lobby cannot be reached, the game still works on your own. Clothes, coins, and quests stay in this browser. Pause, then Save code, if you want a copy you can paste back later."
       ]
@@ -71,6 +139,7 @@
       "summary": "The same CappyWorld village from this project runs on the Play page. No install.",
       "body": [
         "Open Play, wait for the park to load, then press Play on the game menu. WASD or the arrows walk. Space hops. F flops. E, or the Go button, talks, enters a gate, or picks up clothes.",
+        "Press E by the broom to fly. W and S set your speed, A and D turn, Space climbs, and Shift or C comes down. At a station, press E to ride the train.",
         "Clothes and coins stay in this browser. Pause, then Save code, if you want to keep a copy you can paste back later."
       ]
     }

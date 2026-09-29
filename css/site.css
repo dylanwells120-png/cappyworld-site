@@ -268,6 +268,19 @@ h1, h2, h3 {
 
 .badge.note { background: #6b4a86; color: var(--ink); }
 
+.badge.soon { background: #3d6b5a; color: var(--ink); }
+
+.announce-image {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0.8rem 0 0.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--line);
+  background: #1b0d22;
+}
+
 .announce .summary { color: var(--ink); font-size: 1.05rem; }
 
 .featured-home .more {
