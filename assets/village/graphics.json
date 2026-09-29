@@ -22,7 +22,7 @@
     "thickness": 1,
     "intensity": 1
   },
-  "antialias": "smaa",
+  "antialias": "fxaa",
   "grading": {
     "base": {
       "saturation": 1.05,
