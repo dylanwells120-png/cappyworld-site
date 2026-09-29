@@ -1,0 +1,15 @@
+{
+  "buses": { "master": 1, "music": 0.7, "sfx": 0.9, "ambience": 0.6, "ui": 0.8 },
+  "sounds": [
+    { "id": "music_halloween", "bus": "music", "files": ["music/halloween.ogg"], "volume": 0.5, "loop": true },
+    { "id": "pickup", "bus": "sfx", "files": ["sfx/chime_c.wav", "sfx/chime_d.wav", "sfx/chime_e.wav", "sfx/chime_g.wav"], "volume": 0.45, "pitch": [0.98, 1.02], "cooldown": 0.05 },
+    { "id": "coin", "bus": "sfx", "files": ["sfx/chime_g.wav", "sfx/chime_a.wav"], "volume": 0.5, "pitch": [1.0, 1.06], "cooldown": 0.05 },
+    { "id": "flop", "bus": "sfx", "files": ["sfx/flop.wav"], "volume": 0.8, "pitch": [0.94, 1.06], "cooldown": 0.15 },
+    { "id": "thud", "bus": "sfx", "files": ["sfx/thud.wav"], "volume": 0.7, "pitch": [0.95, 1.05], "cooldown": 0.1 },
+    { "id": "ui_click", "bus": "ui", "files": ["sfx/clack.wav"], "volume": 0.35, "pitch": [1.3, 1.45], "cooldown": 0.04 }
+  ],
+  "ambience": [],
+  "music": [
+    { "id": "halloween", "sound": "music_halloween", "when": { "event": ["halloween"] }, "fade": 3 }
+  ]
+}

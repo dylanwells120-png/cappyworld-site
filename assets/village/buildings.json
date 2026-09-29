@@ -5,159 +5,222 @@
       "id": "garden",
       "label": "Garden beds",
       "file": "village/v_garden.glb",
-      "footprint": [
-        3,
-        3
-      ],
+      "footprint": [3, 3],
       "price": 80,
       "limit": 2,
-      "income": {
-        "per_min": 1,
-        "cap_min": 20
+      "income": { "per_min": 1, "cap_min": 20 },
+      "exterior": { "wall": "#efe6c8", "roof": "flat", "door": "south", "stories": 1 },
+      "interior": {
+        "walls": [],
+        "rooms": [
+          { "id": "room_beds", "name": "Beds", "at": [-1.25, -1.25], "size": [2.5, 2.5], "floor": "#6a8f4e" }
+        ],
+        "pieces": [
+          { "id": "plant_a", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [-0.55, 0.35], "rot": 0 },
+          { "id": "plant_b", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [0.55, 0.35], "rot": 0 },
+          { "id": "shelf_tools", "kind": "shelf", "file": "village/v_furn_shelf.glb", "at": [0, -0.9], "rot": 0 }
+        ]
       }
     },
     {
       "id": "cottage",
       "label": "Cottage",
       "file": "village/v_cottage.glb",
-      "footprint": [
-        4,
-        3
-      ],
+      "footprint": [4, 3],
       "price": 150,
       "limit": 1,
-      "income": {
-        "per_min": 2,
-        "cap_min": 30
-      },
-      "effects": {
-        "villager": "momo"
+      "income": { "per_min": 2, "cap_min": 30 },
+      "effects": { "villager": "momo" },
+      "exterior": { "wall": "#fae099", "roof": "gable", "door": "south", "stories": 1 },
+      "interior": {
+        "walls": [
+          { "id": "wall_split", "a": [-1.8, 0], "b": [0.7, 0] }
+        ],
+        "rooms": [
+          { "id": "room_bed", "name": "Bedroom", "at": [-1.8, 0.05], "size": [3.6, 1.3], "floor": "#d7c4a8" },
+          { "id": "room_live", "name": "Living", "at": [-1.8, -1.4], "size": [3.6, 1.35], "floor": "#e6d3b3" }
+        ],
+        "pieces": [
+          { "id": "bed_main", "kind": "bed", "file": "village/v_furn_bed.glb", "at": [-0.7, 0.7], "rot": 0 },
+          { "id": "lamp_bed", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [1.2, 0.7], "rot": 0 },
+          { "id": "rug_live", "kind": "rug", "file": "village/v_furn_rug.glb", "at": [0.1, -0.7], "rot": 0 },
+          { "id": "sofa_live", "kind": "sofa", "file": "village/v_furn_sofa.glb", "at": [0.2, -0.95], "rot": 0 },
+          { "id": "table_live", "kind": "table", "file": "village/v_furn_table.glb", "at": [1.15, -0.35], "rot": 90 }
+        ]
       }
     },
     {
       "id": "market",
       "label": "Market stall",
       "file": "village/v_market.glb",
-      "footprint": [
-        3,
-        2
-      ],
+      "footprint": [3, 2],
       "price": 180,
       "limit": 1,
-      "income": {
-        "per_min": 2.5,
-        "cap_min": 35
-      },
-      "effects": {
-        "villager": "juniper"
+      "income": { "per_min": 2.5, "cap_min": 35 },
+      "effects": { "villager": "juniper" },
+      "exterior": { "wall": "#f3e2c4", "roof": "flat", "door": "south", "stories": 1 },
+      "interior": {
+        "walls": [],
+        "rooms": [
+          { "id": "room_stall", "name": "Stall", "at": [-1.3, -0.85], "size": [2.6, 1.7], "floor": "#e7c98a" }
+        ],
+        "pieces": [
+          { "id": "shelf_goods", "kind": "shelf", "file": "village/v_furn_shelf.glb", "at": [0, 0.45], "rot": 0 },
+          { "id": "table_till", "kind": "table", "file": "village/v_furn_table.glb", "at": [-0.55, -0.35], "rot": 0 },
+          { "id": "plant_front", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [0.85, -0.4], "rot": 0 }
+        ]
       }
     },
     {
       "id": "cafe",
-      "label": "Caf\u00e9",
+      "label": "Café",
       "file": "village/v_cafe.glb",
-      "footprint": [
-        4,
-        4
-      ],
+      "footprint": [4, 4],
       "price": 300,
       "limit": 1,
-      "income": {
-        "per_min": 3,
-        "cap_min": 45
-      },
-      "effects": {
-        "villager": "momo"
+      "income": { "per_min": 3, "cap_min": 45 },
+      "effects": { "villager": "momo" },
+      "exterior": { "wall": "#fcf3e4", "roof": "hip", "door": "south", "stories": 1 },
+      "interior": {
+        "walls": [
+          { "id": "wall_bar", "a": [-1.8, 0.6], "b": [1.8, 0.6] }
+        ],
+        "rooms": [
+          { "id": "room_dining", "name": "Dining", "at": [-1.8, -1.8], "size": [3.6, 2.3], "floor": "#f0d8b8" },
+          { "id": "room_bar", "name": "Bar", "at": [-1.8, 0.7], "size": [3.6, 1.1], "floor": "#c4a574" }
+        ],
+        "pieces": [
+          { "id": "table_a", "kind": "table", "file": "village/v_furn_table.glb", "at": [-0.85, -0.4], "rot": 0 },
+          { "id": "chair_a", "kind": "chair", "file": "village/v_furn_chair.glb", "at": [-0.85, -1.05], "rot": 0 },
+          { "id": "table_b", "kind": "table", "file": "village/v_furn_table.glb", "at": [0.9, -0.35], "rot": 0 },
+          { "id": "chair_b", "kind": "chair", "file": "village/v_furn_chair.glb", "at": [0.9, -1.0], "rot": 0 },
+          { "id": "sofa_window", "kind": "sofa", "file": "village/v_furn_sofa.glb", "at": [0, -1.45], "rot": 0 },
+          { "id": "plant_bar", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [-1.3, 1.15], "rot": 0 },
+          { "id": "lamp_bar", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [1.3, 1.15], "rot": 0 }
+        ]
       }
     },
     {
       "id": "bakery",
       "label": "Bakery",
       "file": "village/v_bakery.glb",
-      "footprint": [
-        4,
-        3
-      ],
+      "footprint": [4, 3],
       "price": 200,
       "limit": 1,
-      "income": {
-        "per_min": 2.5,
-        "cap_min": 35
-      },
-      "effects": {
-        "villager": "biscuit"
+      "income": { "per_min": 2.5, "cap_min": 35 },
+      "effects": { "villager": "biscuit" },
+      "exterior": { "wall": "#f6d7a8", "roof": "gable", "door": "west", "stories": 2 },
+      "interior": {
+        "walls": [
+          { "id": "wall_kitchen", "a": [0.3, -1.3], "b": [0.3, 1.3] }
+        ],
+        "rooms": [
+          { "id": "room_shop", "name": "Shop", "at": [-1.8, -1.3], "size": [2.0, 2.6], "floor": "#f3ddb8" },
+          { "id": "room_kitchen", "name": "Kitchen", "at": [0.4, -1.3], "size": [1.4, 2.6], "floor": "#e4c48a" }
+        ],
+        "pieces": [
+          { "id": "table_counter", "kind": "table", "file": "village/v_furn_table.glb", "at": [-0.7, 0.15], "rot": 90 },
+          { "id": "chair_shop", "kind": "chair", "file": "village/v_furn_chair.glb", "at": [-1.35, -0.7], "rot": 90 },
+          { "id": "shelf_bread", "kind": "shelf", "file": "village/v_furn_shelf.glb", "at": [1.05, 0.55], "rot": 90 },
+          { "id": "plant_window", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [-1.35, 0.85], "rot": 0 },
+          { "id": "lamp_oven", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [1.05, -0.75], "rot": 0 }
+        ]
       }
     },
     {
       "id": "workshop",
       "label": "Workshop",
       "file": "village/v_workshop.glb",
-      "footprint": [
-        4,
-        3
-      ],
+      "footprint": [4, 3],
       "price": 220,
       "limit": 1,
-      "income": {
-        "per_min": 2,
-        "cap_min": 30
-      },
-      "effects": {
-        "villager": "sable"
+      "income": { "per_min": 2, "cap_min": 30 },
+      "effects": { "villager": "sable" },
+      "exterior": { "wall": "#c4a574", "roof": "flat", "door": "east", "stories": 1 },
+      "interior": {
+        "walls": [],
+        "rooms": [
+          { "id": "room_shop", "name": "Shop", "at": [-1.8, -1.3], "size": [3.6, 2.6], "floor": "#c8b090" }
+        ],
+        "pieces": [
+          { "id": "table_bench", "kind": "table", "file": "village/v_furn_table.glb", "at": [-0.4, 0.15], "rot": 0 },
+          { "id": "chair_work", "kind": "chair", "file": "village/v_furn_chair.glb", "at": [-0.4, -0.7], "rot": 0 },
+          { "id": "shelf_parts", "kind": "shelf", "file": "village/v_furn_shelf.glb", "at": [1.15, 0.2], "rot": 90 },
+          { "id": "lamp_task", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [0.45, 0.15], "rot": 0 }
+        ]
       }
     },
     {
       "id": "hut",
       "label": "Fishing hut",
       "file": "village/v_hut.glb",
-      "footprint": [
-        3,
-        3
-      ],
+      "footprint": [3, 3],
       "price": 160,
       "limit": 1,
-      "income": {
-        "per_min": 1.5,
-        "cap_min": 25
-      },
-      "effects": {
-        "villager": "kiko"
+      "income": { "per_min": 1.5, "cap_min": 25 },
+      "effects": { "villager": "kiko" },
+      "exterior": { "wall": "#d8c4a0", "roof": "hip", "door": "south", "stories": 1 },
+      "interior": {
+        "walls": [],
+        "rooms": [
+          { "id": "room_bunk", "name": "Bunk", "at": [-1.25, -1.25], "size": [2.5, 2.5], "floor": "#d2b48c" }
+        ],
+        "pieces": [
+          { "id": "bed_bunk", "kind": "bed", "file": "village/v_furn_bed.glb", "at": [-0.15, 0.45], "rot": 0 },
+          { "id": "rug_hearth", "kind": "rug", "file": "village/v_furn_rug.glb", "at": [0.15, -0.55], "rot": 0 },
+          { "id": "chair_net", "kind": "chair", "file": "village/v_furn_chair.glb", "at": [0.9, -0.7], "rot": -90 },
+          { "id": "lamp_hook", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [0.9, 0.85], "rot": 0 }
+        ]
       }
     },
     {
       "id": "greenhouse",
       "label": "Greenhouse",
       "file": "village/v_greenhouse.glb",
-      "footprint": [
-        4,
-        3
-      ],
+      "footprint": [4, 3],
       "price": 190,
       "limit": 1,
-      "income": {
-        "per_min": 2,
-        "cap_min": 28
-      },
-      "effects": {
-        "villager": "hana"
+      "income": { "per_min": 2, "cap_min": 28 },
+      "effects": { "villager": "hana" },
+      "exterior": { "wall": "#e7f6ea", "roof": "flat", "door": "north", "stories": 1 },
+      "interior": {
+        "walls": [],
+        "rooms": [
+          { "id": "room_glass", "name": "Glasshouse", "at": [-1.8, -1.3], "size": [3.6, 2.6], "floor": "#c5d6b0" }
+        ],
+        "pieces": [
+          { "id": "plant_row_a", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [-1.0, 0.45], "rot": 0 },
+          { "id": "plant_row_b", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [0, 0.45], "rot": 0 },
+          { "id": "plant_row_c", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [1.0, 0.45], "rot": 0 },
+          { "id": "shelf_pots", "kind": "shelf", "file": "village/v_furn_shelf.glb", "at": [0, -0.85], "rot": 0 }
+        ]
       }
     },
     {
       "id": "springs",
       "label": "Hot spring",
       "file": "village/v_bathhouse.glb",
-      "footprint": [
-        5,
-        4
-      ],
+      "footprint": [5, 4],
       "price": 450,
       "limit": 1,
-      "income": {
-        "per_min": 4,
-        "cap_min": 60
-      },
-      "effects": {
-        "villager": "tofu"
+      "income": { "per_min": 4, "cap_min": 60 },
+      "effects": { "villager": "tofu" },
+      "exterior": { "wall": "#e6d2ad", "roof": "hip", "door": "south", "stories": 2 },
+      "interior": {
+        "walls": [
+          { "id": "wall_screen", "a": [-2.2, 0.2], "b": [1.2, 0.2] }
+        ],
+        "rooms": [
+          { "id": "room_entry", "name": "Entry", "at": [-2.2, -1.8], "size": [4.4, 1.9], "floor": "#e4d2b4" },
+          { "id": "room_soak", "name": "Soak", "at": [-2.2, 0.3], "size": [4.4, 1.5], "floor": "#9fd4d8" }
+        ],
+        "pieces": [
+          { "id": "sofa_wait", "kind": "sofa", "file": "village/v_furn_sofa.glb", "at": [-0.8, -1.15], "rot": 0 },
+          { "id": "rug_entry", "kind": "rug", "file": "village/v_furn_rug.glb", "at": [1.15, -0.9], "rot": 90 },
+          { "id": "lamp_entry", "kind": "lamp", "file": "village/v_furn_lamp.glb", "at": [1.7, -1.35], "rot": 0 },
+          { "id": "plant_soak", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [-1.5, 0.95], "rot": 0 },
+          { "id": "plant_soak_b", "kind": "plant", "file": "village/v_furn_plant.glb", "at": [1.5, 0.95], "rot": 0 }
+        ]
       }
     }
   ]

@@ -1,0 +1,119 @@
+{
+  "toneMapping": "aces",
+  "exposure": 1.15,
+  "shadows": {
+    "enabled": true,
+    "type": "pcfsoft",
+    "mapSize": 2048,
+    "radius": 3,
+    "bias": -0.0004,
+    "normalBias": 0.02
+  },
+  "bloom": {
+    "enabled": true,
+    "strength": 0.35,
+    "radius": 0.5,
+    "threshold": 0.85
+  },
+  "ao": {
+    "enabled": true,
+    "radius": 0.6,
+    "distanceFalloff": 1,
+    "thickness": 1,
+    "intensity": 1
+  },
+  "antialias": "smaa",
+  "grading": {
+    "base": {
+      "saturation": 1.05,
+      "contrast": 1.04,
+      "brightness": 0,
+      "tint": "#ffffff",
+      "tintAmount": 0,
+      "vignette": 0.18
+    },
+    "rules": [
+      {
+        "id": "dawn",
+        "when": {
+          "tod": [
+            "dawn"
+          ]
+        },
+        "tint": "#ffb98a",
+        "tintAmount": 0.12
+      },
+      {
+        "id": "dusk",
+        "when": {
+          "tod": [
+            "dusk"
+          ]
+        },
+        "tint": "#ff8f6b",
+        "tintAmount": 0.15,
+        "saturation": 1.1
+      },
+      {
+        "id": "night",
+        "when": {
+          "tod": [
+            "night"
+          ]
+        },
+        "tint": "#6f86ff",
+        "tintAmount": 0.18,
+        "saturation": 0.85,
+        "brightness": 0.02
+      },
+      {
+        "id": "rain",
+        "when": {
+          "weather": [
+            "rain",
+            "storm"
+          ]
+        },
+        "saturation": 0.82,
+        "contrast": 0.96,
+        "tint": "#9fb4c8",
+        "tintAmount": 0.1
+      },
+      {
+        "id": "snow",
+        "when": {
+          "weather": [
+            "snow"
+          ]
+        },
+        "tint": "#dfeaff",
+        "tintAmount": 0.08,
+        "brightness": 0.03
+      },
+      {
+        "id": "halloween",
+        "when": {
+          "event": [
+            "halloween"
+          ]
+        },
+        "tint": "#ff9a4d",
+        "tintAmount": 0.06,
+        "vignette": 0.28
+      }
+    ]
+  },
+  "coarse": {
+    "shadows": {
+      "mapSize": 1024,
+      "type": "pcf"
+    },
+    "bloom": {
+      "enabled": false
+    },
+    "ao": {
+      "enabled": false
+    },
+    "antialias": "none"
+  }
+}

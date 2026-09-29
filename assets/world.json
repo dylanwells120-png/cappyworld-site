@@ -10,7 +10,13 @@
     {"id": "charm", "label": "Pumpkin charm", "file": "charm.glb", "spot": [228.0, -3.5], "lift": 0.06, "place": "patch"},
     {"id": "ghost", "label": "Ghost sheet", "file": "ghost.glb", "spot": [-12.5, 7.0], "lift": 0.0, "place": "yard", "season": "halloween"},
     {"id": "cobweb", "label": "Cobweb cape", "file": "web.glb", "spot": [13.5, 9.0], "lift": 0.04, "place": "yard", "season": "halloween"},
-    {"id": "glow", "label": "Glimmer candle", "file": "candle.glb", "spot": [0.0, -10.5], "lift": 0.0, "place": "yard", "season": "halloween"}
+    {"id": "glow", "label": "Glimmer candle", "file": "candle.glb", "spot": [0.0, -10.5], "lift": 0.0, "place": "yard", "season": "halloween"},
+    {"id": "crown", "label": "Flower crown", "file": "crown.glb", "spot": [-16.5, -6.0], "lift": 0.0, "place": "yard"},
+    {"id": "sweater", "label": "Sweater", "file": "sweater.glb", "spot": [6.0, -6.5], "lift": 0.04, "place": "yard"},
+    {"id": "backpack", "label": "Backpack", "file": "backpack.glb", "spot": [-4.5, 12.5], "lift": 0.05, "place": "yard"},
+    {"id": "bowtie", "label": "Bow tie", "file": "bowtie.glb", "spot": [16.8, -10.0], "lift": 0.05, "place": "yard"},
+    {"id": "bandana", "label": "Bandana", "file": "bandana.glb", "spot": [-16.0, 1.5], "lift": 0.05, "place": "yard"},
+    {"id": "visor", "label": "Visor", "file": "visor.glb", "spot": [1.5, 6.8], "lift": 0.0, "place": "yard"}
   ],
   "portals": [
     {
