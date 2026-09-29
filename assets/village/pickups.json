@@ -18,6 +18,9 @@
     {"id": "sticker_party", "item": "spooky_sticker", "level": "world", "at": [7, 6]},
     {"id": "ore_mine", "item": "ore", "level": "mine", "at": [1.5, 396], "quest": "nori_ore"},
     {"id": "lantern_mine_deep", "item": "lantern_mine", "level": "mine", "at": [-1.5, 402], "quest": "nori_lantern"},
-    {"id": "pastry_cafe", "item": "pastry", "level": "cafe", "at": [0.1, 342.4], "quest": "biscuit_pastry"}
+    {"id": "pastry_cafe", "item": "pastry", "level": "cafe", "at": [0.1, 342.4], "quest": "biscuit_pastry"},
+    {"id": "ladder_station", "item": "ladder", "level": "firestation", "at": [5.0, 698.4], "quest": "ember_kitten"},
+    {"id": "kitten_school", "item": "kitten", "level": "world", "at": [36.2, 71.0], "quest": "ember_kitten"},
+    {"id": "locket_bridge", "item": "locket", "level": "world", "at": [-26.5, 63.4], "quest": "barley_locket"}
   ]
 }

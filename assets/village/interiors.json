@@ -30,6 +30,66 @@
       "cam_back": 3.4,
       "cam_up": 1.6,
       "fog": 0.05
+    },
+    {
+      "id": "school",
+      "name": "Schoolhouse",
+      "origin": [0, 460],
+      "half": [6, 5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
+    },
+    {
+      "id": "hospital",
+      "name": "Hospital",
+      "origin": [0, 520],
+      "half": [6, 5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
+    },
+    {
+      "id": "store",
+      "name": "General store",
+      "origin": [0, 580],
+      "half": [5, 4.5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
+    },
+    {
+      "id": "boutique",
+      "name": "Boutique",
+      "origin": [0, 640],
+      "half": [5, 4.5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
+    },
+    {
+      "id": "firestation",
+      "name": "Fire station",
+      "origin": [0, 700],
+      "half": [6, 5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
+    },
+    {
+      "id": "police",
+      "name": "Police station",
+      "origin": [0, 760],
+      "half": [5, 4.5],
+      "inset": 0.55,
+      "cam_back": 2.8,
+      "cam_up": 1.5,
+      "fog": 0.02
     }
   ],
   "dress": [
@@ -64,7 +124,70 @@
     {"file": "village/v_lantern.glb", "at": [-2.8, 394.8, 0], "h": 0, "level": "mine"},
     {"file": "village/v_lantern.glb", "at": [2.8, 394.8, 0], "h": 0, "level": "mine"},
     {"file": "village/v_lantern.glb", "at": [0, 405.6, 0], "h": 180, "level": "mine"},
-    {"file": "village/v_rail.glb", "at": [0, 400, 0], "h": -90, "level": "mine"}
+    {"file": "village/v_rail.glb", "at": [0, 400, 0], "h": -90, "level": "mine"},
+    {"file": "village/v_furn_blackboard.glb", "at": [0, 464.82, 0], "h": 0, "level": "school", "solid": [1.12, 0.14, 1.9]},
+    {"file": "village/v_furn_table.glb", "at": [-2.8, 463.5, 0], "h": 0, "level": "school", "solid": [0.62, 0.4, 0.8]},
+    {"file": "village/v_furn_chair.glb", "at": [-2.8, 464.2, 0], "h": 180, "level": "school"},
+    {"file": "village/v_furn_shelf.glb", "at": [5.72, 461.5, 0], "h": -90, "level": "school", "solid": [0.2, 0.66, 1.8]},
+    {"file": "village/v_furn_shelf.glb", "at": [5.72, 463.2, 0], "h": -90, "level": "school", "solid": [0.2, 0.66, 1.8]},
+    {"file": "village/v_furn_rug.glb", "at": [0, 460.4, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_plant.glb", "at": [-5.4, 464.5, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_plant.glb", "at": [3.4, 464.55, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_lamp.glb", "at": [-5.4, 456.2, 0], "h": 0, "level": "school"},
+    {"file": "village/v_bench.glb", "at": [-5.55, 459.4, 0], "h": 90, "level": "school", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_furn_desk.glb", "at": [-2.4, 461.6, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_desk.glb", "at": [0, 461.6, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_desk.glb", "at": [2.4, 461.6, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_desk.glb", "at": [-2.4, 459.4, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_desk.glb", "at": [0, 459.4, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_desk.glb", "at": [2.4, 459.4, 0], "h": 0, "level": "school"},
+    {"file": "village/v_furn_medbed.glb", "at": [-4.3, 523.1, 0], "h": 0, "level": "hospital", "solid": [0.5, 0.95, 0.8]},
+    {"file": "village/v_furn_medbed.glb", "at": [-1.9, 523.1, 0], "h": 0, "level": "hospital", "solid": [0.5, 0.95, 0.8]},
+    {"file": "village/v_furn_cabinet.glb", "at": [1.0, 524.75, 0], "h": 0, "level": "hospital", "solid": [0.46, 0.2, 1.5]},
+    {"file": "village/v_furn_cabinet.glb", "at": [2.0, 524.75, 0], "h": 0, "level": "hospital", "solid": [0.46, 0.2, 1.5]},
+    {"file": "village/v_furn_counter.glb", "at": [3.6, 518.4, 0], "h": 0, "level": "hospital", "solid": [1.05, 0.36, 0.9]},
+    {"file": "village/v_bench.glb", "at": [-5.55, 517.4, 0], "h": 90, "level": "hospital", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_bench.glb", "at": [-5.55, 519.0, 0], "h": 90, "level": "hospital", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_furn_plant.glb", "at": [5.4, 524.5, 0], "h": 0, "level": "hospital"},
+    {"file": "village/v_furn_plant.glb", "at": [-5.5, 524.5, 0], "h": 0, "level": "hospital"},
+    {"file": "village/v_furn_rug.glb", "at": [0.4, 518.6, 0], "h": 0, "level": "hospital"},
+    {"file": "village/v_furn_lamp.glb", "at": [5.4, 516.0, 0], "h": 0, "level": "hospital"},
+    {"file": "village/v_furn_counter.glb", "at": [0, 581.6, 0], "h": 0, "level": "store", "solid": [1.05, 0.36, 0.9]},
+    {"file": "village/v_furn_potion_shelf.glb", "at": [-2.4, 584.3, 0], "h": 0, "level": "store", "solid": [0.72, 0.2, 1.8]},
+    {"file": "village/v_furn_potion_shelf.glb", "at": [2.4, 584.3, 0], "h": 0, "level": "store", "solid": [0.72, 0.2, 1.8]},
+    {"file": "village/v_furn_shelf.glb", "at": [-4.72, 581.2, 0], "h": 90, "level": "store", "solid": [0.2, 0.66, 1.8]},
+    {"file": "village/v_crate_stack.glb", "at": [4.2, 577.0, 0], "h": 20, "level": "store", "solid": [0.4, 0.4, 0.95]},
+    {"file": "village/v_crate_open.glb", "at": [4.3, 578.3, 0], "h": -10, "level": "store", "solid": [0.4, 0.4, 0.65]},
+    {"file": "village/v_crate_tall.glb", "at": [-4.2, 577.2, 0], "h": 0, "level": "store", "solid": [0.4, 0.4, 1.2]},
+    {"file": "village/v_furn_plant.glb", "at": [4.4, 583.9, 0], "h": 0, "level": "store"},
+    {"file": "village/v_furn_rug.glb", "at": [0, 578.4, 0], "h": 0, "level": "store"},
+    {"file": "village/v_furn_counter.glb", "at": [2.6, 642.2, 0], "h": 0, "level": "boutique", "solid": [1.05, 0.36, 0.9]},
+    {"file": "village/v_furn_rack.glb", "at": [-2.6, 643.2, 0], "h": 0, "level": "boutique", "solid": [0.76, 0.26, 1.4]},
+    {"file": "village/v_furn_rack.glb", "at": [-2.6, 640.6, 0], "h": 0, "level": "boutique", "solid": [0.76, 0.26, 1.4]},
+    {"file": "village/v_furn_mirror.glb", "at": [4.5, 638.6, 0], "h": -90, "level": "boutique", "solid": [0.25, 0.3, 1.6]},
+    {"file": "village/v_furn_sofa.glb", "at": [0.2, 644.1, 0], "h": 0, "level": "boutique", "solid": [0.96, 0.36, 0.8]},
+    {"file": "village/v_furn_plant.glb", "at": [-4.4, 644.0, 0], "h": 0, "level": "boutique"},
+    {"file": "village/v_furn_lamp.glb", "at": [4.4, 644.0, 0], "h": 0, "level": "boutique"},
+    {"file": "village/v_furn_rug.glb", "at": [0, 639.4, 0], "h": 0, "level": "boutique"},
+    {"file": "village/v_furn_lockers.glb", "at": [-1.4, 704.7, 0], "h": 0, "level": "firestation", "solid": [0.6, 0.24, 1.7]},
+    {"file": "village/v_furn_lockers.glb", "at": [-2.7, 704.7, 0], "h": 0, "level": "firestation", "solid": [0.6, 0.24, 1.7]},
+    {"file": "village/v_fire_pole.glb", "at": [3.8, 702.8, 0], "h": 0, "level": "firestation"},
+    {"file": "village/v_fire_bell.glb", "at": [-5.3, 701.4, 0], "h": 90, "level": "firestation", "solid": [0.3, 0.6, 1.5]},
+    {"file": "village/v_furn_table.glb", "at": [0.8, 700.8, 0], "h": 0, "level": "firestation", "solid": [0.62, 0.4, 0.8]},
+    {"file": "village/v_furn_chair.glb", "at": [0.2, 700.1, 0], "h": 0, "level": "firestation"},
+    {"file": "village/v_furn_chair.glb", "at": [1.4, 700.1, 0], "h": 0, "level": "firestation"},
+    {"file": "village/v_crate_stack.glb", "at": [5.3, 696.8, 0], "h": 0, "level": "firestation", "solid": [0.4, 0.4, 0.95]},
+    {"file": "village/v_furn_plant.glb", "at": [5.4, 704.5, 0], "h": 0, "level": "firestation"},
+    {"file": "village/v_furn_sofa.glb", "at": [-4.6, 697.0, 0], "h": 90, "level": "firestation", "solid": [0.36, 0.96, 0.8]},
+    {"file": "village/v_furn_table.glb", "at": [0, 762.2, 0], "h": 0, "level": "police", "solid": [0.62, 0.4, 0.8]},
+    {"file": "village/v_furn_chair.glb", "at": [0, 762.95, 0], "h": 180, "level": "police"},
+    {"file": "village/v_furn_lamp.glb", "at": [1.4, 763.9, 0], "h": 0, "level": "police"},
+    {"file": "village/v_furn_lockers.glb", "at": [-3.2, 764.2, 0], "h": 0, "level": "police", "solid": [0.6, 0.24, 1.7]},
+    {"file": "village/v_furn_shelf.glb", "at": [4.72, 761.2, 0], "h": -90, "level": "police", "solid": [0.2, 0.66, 1.8]},
+    {"file": "village/v_crate_open.glb", "at": [3.5, 764.0, 0], "h": 0, "level": "police", "solid": [0.4, 0.4, 0.65]},
+    {"file": "village/v_bench.glb", "at": [-4.55, 758.8, 0], "h": 90, "level": "police", "solid": [0.2, 0.5, 0.42]},
+    {"file": "village/v_furn_plant.glb", "at": [-4.4, 764.0, 0], "h": 0, "level": "police"},
+    {"file": "village/v_furn_rug.glb", "at": [0, 759.2, 0], "h": 0, "level": "police"}
   ],
   "lights": [
     {"level": "hall", "at": [0, 280.4, 1.9], "color": "#ffd4a0", "intensity": 10.0, "distance": 10.0, "flicker": false},
@@ -73,6 +196,157 @@
     {"level": "cafe", "at": [2.2, 338.8, 1.1], "color": "#ffb070", "intensity": 4.0, "distance": 5.5, "flicker": false},
     {"level": "mine", "at": [0, 399.5, 1.7], "color": "#c8a070", "intensity": 3.6, "distance": 8.0, "flicker": true},
     {"level": "mine", "at": [-3.2, 395.4, 1.1], "color": "#ff8a3a", "intensity": 5.5, "distance": 6.5, "flicker": true},
-    {"level": "mine", "at": [3.4, 404.8, 1.15], "color": "#7dff6a", "intensity": 2.8, "distance": 5.0, "flicker": true}
+    {"level": "mine", "at": [3.4, 404.8, 1.15], "color": "#7dff6a", "intensity": 2.8, "distance": 5.0, "flicker": true},
+    {"level": "school", "at": [0, 461.0, 1.9], "color": "#fff0d8", "intensity": 10.0, "distance": 10.0, "flicker": false},
+    {"level": "school", "at": [-3.0, 464.0, 1.3], "color": "#ffd8a0", "intensity": 4.0, "distance": 6.0, "flicker": false},
+    {"level": "hospital", "at": [0, 520.6, 1.95], "color": "#f4fbff", "intensity": 11.0, "distance": 10.0, "flicker": false},
+    {"level": "hospital", "at": [-3.1, 523.0, 1.3], "color": "#dff5ee", "intensity": 4.0, "distance": 6.0, "flicker": false},
+    {"level": "store", "at": [0, 580.4, 1.85], "color": "#ffe6c0", "intensity": 10.0, "distance": 9.5, "flicker": false},
+    {"level": "store", "at": [0, 583.6, 1.2], "color": "#b6ffd0", "intensity": 3.0, "distance": 5.0, "flicker": false},
+    {"level": "boutique", "at": [0, 640.4, 1.85], "color": "#ffe0ea", "intensity": 10.0, "distance": 9.5, "flicker": false},
+    {"level": "boutique", "at": [4.0, 639.0, 1.3], "color": "#ffd8a0", "intensity": 3.5, "distance": 5.0, "flicker": false},
+    {"level": "firestation", "at": [0, 700.6, 1.95], "color": "#ffe2c4", "intensity": 10.0, "distance": 10.0, "flicker": false},
+    {"level": "firestation", "at": [3.8, 702.6, 1.3], "color": "#ffb070", "intensity": 4.0, "distance": 5.5, "flicker": false},
+    {"level": "police", "at": [0, 760.4, 1.85], "color": "#e8f0ff", "intensity": 10.0, "distance": 9.5, "flicker": false},
+    {"level": "police", "at": [1.4, 763.6, 1.3], "color": "#ffd8a0", "intensity": 3.5, "distance": 5.0, "flicker": false}
+  ],
+  "activities": [
+    {
+      "id": "school_lesson",
+      "level": "school",
+      "kind": "quiz",
+      "verb": "Sit down",
+      "label": "Today's lesson",
+      "host": "clover",
+      "spots": [[0, 461.1], [2.4, 461.1], [-2.4, 458.9], [0, 458.9]],
+      "radius": 0.7,
+      "questions": 3,
+      "reward_per_correct": 5,
+      "sticker": "gold_star",
+      "pool": [
+        {"q": "How many stations are on the rail line?", "answers": ["Four", "Six", "Nine"], "correct": 1},
+        {
+          "q": "What do capybaras love most on a cold day?",
+          "answers": ["A warm soak", "Ice skating", "Chasing trains"],
+          "correct": 0
+        },
+        {
+          "q": "Which way is the village square from Mochi's home?",
+          "answers": ["North", "South", "West"],
+          "correct": 0
+        },
+        {"q": "What is 7 + 5?", "answers": ["11", "12", "13"], "correct": 1},
+        {"q": "What does a caterpillar turn into?", "answers": ["A beetle", "A butterfly", "A bee"], "correct": 1},
+        {"q": "Blue and yellow paint make which colour?", "answers": ["Green", "Purple", "Orange"], "correct": 0},
+        {"q": "How many legs does a spider have?", "answers": ["Six", "Eight", "Ten"], "correct": 1},
+        {"q": "Capybaras are the world's biggest...", "answers": ["Rodents", "Birds", "Fish"], "correct": 0},
+        {"q": "What is 3 × 4?", "answers": ["7", "12", "14"], "correct": 1},
+        {"q": "Which season brings snow to the park?", "answers": ["Summer", "Winter", "Spring"], "correct": 1},
+        {"q": "What do bees make?", "answers": ["Honey", "Milk", "Silk"], "correct": 0},
+        {
+          "q": "Where can you soak your paws in warm water?",
+          "answers": ["The hot springs", "The mine", "The bridge"],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "hospital_checkup",
+      "level": "hospital",
+      "kind": "checkup",
+      "verb": "Get a check-up",
+      "label": "Check-up",
+      "host": "dr_hazel",
+      "spots": [[-3.1, 522.5]],
+      "radius": 0.8,
+      "buff": "swift",
+      "seconds": 45,
+      "cooldown_hours": 6,
+      "lines": [
+        "Say \"ahh\"... Lovely. Heart like a drum, whiskers in top shape.",
+        "Deep breath in... and out. You are fit as a fiddle.",
+        "Paws, ears, nose: all perfect. Off you hop!"
+      ]
+    },
+    {
+      "id": "store_counter",
+      "level": "store",
+      "kind": "shop",
+      "verb": "Shop",
+      "label": "General store",
+      "host": "maple",
+      "spots": [[0, 580.75]],
+      "radius": 0.9,
+      "stock": [
+        {"potion": "bounce", "price": 25},
+        {"potion": "swift", "price": 25},
+        {"potion": "glow", "price": 20},
+        {"potion": "float", "price": 40},
+        {"potion": "frog", "price": 60}
+      ]
+    },
+    {
+      "id": "boutique_counter",
+      "level": "boutique",
+      "kind": "shop",
+      "verb": "Browse",
+      "label": "Boutique",
+      "host": "lulu",
+      "spots": [[2.6, 641.35]],
+      "radius": 0.9,
+      "stock": [
+        {"clothing": "hat", "price": 30},
+        {"clothing": "scarf", "price": 30},
+        {"clothing": "bowtie", "price": 25},
+        {"clothing": "bandana", "price": 25},
+        {"clothing": "visor", "price": 30},
+        {"clothing": "boots", "price": 40},
+        {"clothing": "vest", "price": 45},
+        {"clothing": "backpack", "price": 50},
+        {"clothing": "sweater", "price": 55},
+        {"clothing": "crown", "price": 60}
+      ]
+    },
+    {
+      "id": "fire_pole",
+      "level": "firestation",
+      "kind": "pole",
+      "verb": "Slide down",
+      "label": "Fire pole",
+      "spots": [[3.8, 702.2]],
+      "radius": 0.7,
+      "height": 1.6
+    },
+    {
+      "id": "fire_bell",
+      "level": "firestation",
+      "kind": "bell",
+      "verb": "Ring the bell",
+      "label": "Alarm bell",
+      "host": "ember",
+      "spots": [[-4.4, 701.4]],
+      "radius": 0.8,
+      "lines": [
+        "Ding ding! Drill time! ...Good hustle, everyone. Back to your tea.",
+        "That bell is louder than it looks. Flint just dropped his biscuit.",
+        "Ha! You've got the ring of a real firefighter."
+      ]
+    },
+    {
+      "id": "police_lostfound",
+      "level": "police",
+      "kind": "lostfound",
+      "verb": "Look in the box",
+      "label": "Lost and found",
+      "host": "barley",
+      "spots": [[3.5, 763.2]],
+      "radius": 0.8,
+      "lines": [
+        "One left mitten, a kite string, and a very old sandwich.",
+        "A button, a bell off a bike, and somebody's library card.",
+        "A striped sock. Just the one. It is always just the one."
+      ],
+      "quest": "barley_locket"
+    }
   ]
 }

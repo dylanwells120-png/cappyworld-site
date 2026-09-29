@@ -310,6 +310,295 @@
         ]}
       ],
       "requires": {"quest_done": "momo_bread"}
+    },
+    {
+      "id": "clover",
+      "name": "Ms. Clover",
+      "role": "teacher",
+      "tint": "#d9b27c",
+      "scale": 1.0,
+      "spot": {"level": "school", "at": [1.2, 463.9], "h": 180},
+      "schedule": [
+        {"start": 7, "end": 12, "at": [1.2, 463.9], "h": 180, "state": "wander"},
+        {"start": 12, "end": 13, "at": [0, 457.9], "h": 0, "state": "wander"},
+        {"start": 13, "end": 17, "at": [-1.2, 463.9], "h": 180, "state": "wander"},
+        {"start": 17, "end": 7, "at": [-2.8, 464.25], "h": 180, "state": "idle"}
+      ],
+      "idle": ["Chalk dust and good questions: that is a school.", "Take any free desk."],
+      "barks": [
+        {"text": "Welcome, Mochi! Take a seat at a free desk for today's lesson."},
+        {"text": "Lessons are done for the day, but you can still take a seat.", "hours": [17, 7]},
+        {"text": "A gold star student! Pip will be jealous.", "flag": "school_star"}
+      ],
+      "topics": [
+        {
+          "id": "lesson",
+          "label": "Lessons",
+          "lines": [
+            {"text": "Sit at any free desk and I will ask three questions. Five CappyCoin for every right answer."},
+            {"text": "One lesson a day. Get all three right and you earn a gold star sticker."}
+          ]
+        },
+        {
+          "id": "kids",
+          "label": "The pupils",
+          "lines": [{"text": "Bean asks a hundred questions a day. Sprout mostly draws trains. Both are lovely."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "bean",
+      "name": "Bean",
+      "role": "pupil",
+      "tint": "#c8a27a",
+      "scale": 0.78,
+      "spot": {"level": "school", "at": [-2.4, 461.05], "h": 0},
+      "schedule": [{"start": 0, "end": 24, "at": [-2.4, 461.05], "h": 0, "state": "idle"}],
+      "idle": ["Is it snack time yet?"],
+      "barks": [
+        {"text": "Psst! The answer is usually the one that sounds most like a capybara."},
+        {"text": "I got a gold star once. It was for sitting still."}
+      ],
+      "topics": [
+        {
+          "id": "school",
+          "label": "School",
+          "lines": [{"text": "Ms. Clover knows everything. Even how many legs a spider has!"}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "sprout",
+      "name": "Sprout",
+      "role": "pupil",
+      "tint": "#b5c98a",
+      "scale": 0.78,
+      "spot": {"level": "school", "at": [2.4, 458.85], "h": 0},
+      "schedule": [{"start": 0, "end": 24, "at": [2.4, 458.85], "h": 0, "state": "idle"}],
+      "idle": ["I am drawing the train. It has nine wheels."],
+      "barks": [{"text": "Want to see my drawing? It's the little red train."}, {"text": "Shh, I'm counting stations. Six!"}],
+      "topics": [
+        {
+          "id": "train",
+          "label": "Your drawing",
+          "lines": [{"text": "The train goes Home, Village, Meadow, Hot springs, Forest and the Mine. Choo!"}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "dr_hazel",
+      "name": "Dr. Hazel",
+      "role": "doctor",
+      "tint": "#b89878",
+      "scale": 1.0,
+      "spot": {"level": "hospital", "at": [-0.7, 521.9], "h": 90},
+      "schedule": [
+        {"start": 7, "end": 19, "at": [-0.7, 521.9], "h": 90, "state": "wander"},
+        {"start": 19, "end": 7, "at": [0.6, 523.8], "h": 180, "state": "idle"}
+      ],
+      "idle": ["An apple a day, and a warm soak on Sundays."],
+      "barks": [
+        {"text": "Hello, Mochi! Hop by the beds for a quick check-up."},
+        {"text": "Late shift. The check-up bed is still open.", "hours": [19, 7]}
+      ],
+      "topics": [
+        {
+          "id": "checkup",
+          "label": "Check-ups",
+          "lines": [
+            {
+              "text": "Stand between the beds and I will give you a once-over. Healthy capybaras run faster for a while!"
+            },
+            {"text": "Come back after a few hours for another one."}
+          ]
+        },
+        {
+          "id": "advice",
+          "label": "Advice",
+          "lines": [{"text": "Soak at the hot springs, eat your greens, and don't lick the frog potions."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "poppy",
+      "name": "Nurse Poppy",
+      "role": "nurse",
+      "tint": "#e6c3a0",
+      "scale": 1.0,
+      "spot": {"level": "hospital", "at": [2.1, 518.95], "h": 180},
+      "schedule": [
+        {"start": 6, "end": 22, "at": [2.1, 518.95], "h": 180, "state": "idle"},
+        {"start": 22, "end": 6, "at": [2.1, 518.95], "h": 180, "state": "idle"}
+      ],
+      "idle": ["Sign in at the desk, please!"],
+      "barks": [{"text": "Welcome to the hospital! Dr. Hazel is by the beds."}, {"text": "Mind the floor, I just mopped it."}],
+      "topics": [
+        {
+          "id": "desk",
+          "label": "Front desk",
+          "lines": [{"text": "No waiting today. Dr. Hazel sees everyone, even Bean when he eats too much cake."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "maple",
+      "name": "Maple",
+      "role": "shopkeeper",
+      "tint": "#caa47a",
+      "scale": 1.0,
+      "spot": {"level": "store", "at": [1.55, 581.9], "h": 180},
+      "schedule": [
+        {"start": 6, "end": 21, "at": [1.55, 581.9], "h": 180, "state": "idle"},
+        {"start": 21, "end": 6, "at": [1.55, 581.9], "h": 180, "state": "idle"}
+      ],
+      "idle": ["Fresh bottles on the back shelves."],
+      "barks": [
+        {"text": "Welcome to the general store! Step up to the counter to shop."},
+        {"text": "I stock every brew from the manor, bottled fresh."}
+      ],
+      "topics": [
+        {
+          "id": "stock",
+          "label": "The shop",
+          "lines": [{"text": "Bounce, swift, glimmer, cloud sip, and the ribbit hex for pranksters. Pay at the counter."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "lulu",
+      "name": "Lulu",
+      "role": "tailor",
+      "tint": "#e2b0c0",
+      "scale": 1.0,
+      "spot": {"level": "boutique", "at": [1.1, 642.35], "h": 180},
+      "schedule": [
+        {"start": 8, "end": 20, "at": [1.1, 642.35], "h": 180, "state": "idle"},
+        {"start": 20, "end": 8, "at": [1.1, 642.35], "h": 180, "state": "idle"}
+      ],
+      "idle": ["Every outfit deserves a twirl."],
+      "barks": [
+        {"text": "Darling, that fur needs a scarf! Come to the counter."},
+        {"text": "Try the mirror by the window after you buy something."}
+      ],
+      "topics": [
+        {
+          "id": "fashion",
+          "label": "Fashion",
+          "lines": [{"text": "Hats, scarves, bow ties, a flower crown... Buy it here, then wear it from the Wardrobe."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "ember",
+      "name": "Chief Ember",
+      "role": "fire chief",
+      "tint": "#c98a6a",
+      "scale": 1.0,
+      "spot": {"level": "firestation", "at": [2.4, 701.5], "h": 180},
+      "schedule": [
+        {"start": 6, "end": 22, "at": [2.4, 701.5], "h": 180, "state": "wander"},
+        {"start": 22, "end": 6, "at": [0.8, 701.5], "h": 180, "state": "idle"}
+      ],
+      "idle": ["Ready for anything, day or night."],
+      "barks": [
+        {"text": "Welcome to the fire station! Try the pole — everyone does."},
+        {"text": "Thanks again for Mittens. You're one of us now.", "flag": "honorary_firefighter"}
+      ],
+      "topics": [
+        {
+          "id": "station",
+          "label": "The station",
+          "lines": [
+            {
+              "text": "Pole in the corner, bell by the wall, truck out front. Ring the bell if you want to see Flint jump."
+            }
+          ]
+        },
+        {
+          "id": "safety",
+          "label": "Fire safety",
+          "lines": [{"text": "Never leave a lantern by the hay, and always know two ways out of a room."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "flint",
+      "name": "Flint",
+      "role": "firefighter",
+      "tint": "#a58a70",
+      "scale": 1.0,
+      "spot": {"level": "firestation", "at": [-2.2, 698.6], "h": 0},
+      "schedule": [{"start": 0, "end": 24, "at": [-2.2, 698.6], "h": 0, "state": "wander"}],
+      "idle": ["Polishing the truck again."],
+      "barks": [
+        {"text": "That truck out front? I shine it every morning."},
+        {"text": "Ding ding! Oh... that was just in my head."}
+      ],
+      "topics": [
+        {
+          "id": "truck",
+          "label": "The truck",
+          "lines": [{"text": "Ladder, hose, siren. The siren is my favourite part, don't tell the Chief."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "barley",
+      "name": "Sergeant Barley",
+      "role": "police officer",
+      "tint": "#8f9bb0",
+      "scale": 1.0,
+      "spot": {"level": "police", "at": [1.05, 762.55], "h": 180},
+      "schedule": [
+        {"start": 6, "end": 22, "at": [1.05, 762.55], "h": 180, "state": "idle"},
+        {"start": 22, "end": 6, "at": [1.05, 762.55], "h": 180, "state": "idle"}
+      ],
+      "idle": ["All quiet in the village."],
+      "barks": [
+        {"text": "Afternoon, Mochi. Anything to report?"},
+        {"text": "The village is safer with helpers like you.", "flag": "good_citizen"}
+      ],
+      "topics": [
+        {
+          "id": "work",
+          "label": "Police work",
+          "lines": [{"text": "Mostly lost mittens and runaway pumpkins. The lost-and-found box is by the wall."}]
+        },
+        {
+          "id": "tips",
+          "label": "Tips",
+          "lines": [{"text": "If you find something shiny on your walks, bring it here."}]
+        }
+      ],
+      "requires": null
+    },
+    {
+      "id": "dot",
+      "name": "Officer Dot",
+      "role": "police officer",
+      "tint": "#b0a08a",
+      "scale": 1.0,
+      "spot": {"level": "police", "at": [-2.4, 759.6], "h": 90},
+      "schedule": [{"start": 0, "end": 24, "at": [-2.4, 759.6], "h": 90, "state": "wander"}],
+      "idle": ["On patrol. Well, indoor patrol."],
+      "barks": [{"text": "Keep your paws clean and your pockets checked!"}, {"text": "Sergeant Barley makes the best cocoa."}],
+      "topics": [
+        {
+          "id": "patrol",
+          "label": "Patrol",
+          "lines": [{"text": "I walk the square every evening. Mostly I say hello to Yuzu."}]
+        }
+      ],
+      "requires": null
     }
   ]
 }

@@ -28,6 +28,10 @@
     {"id": "fish_minnow", "label": "River minnow"},
     {"id": "fish_silver", "label": "Silver fish"},
     {"id": "fish_carp", "label": "Lazy carp"},
-    {"id": "pastry", "label": "Warm pastry"}
+    {"id": "pastry", "label": "Warm pastry"},
+    {"id": "ladder", "label": "Fire ladder"},
+    {"id": "kitten", "label": "Rescued kitten"},
+    {"id": "locket", "label": "Silver locket"},
+    {"id": "gold_star", "label": "Gold star sticker"}
   ]
 }

@@ -58,6 +58,16 @@
       ]
     },
     {
+      "id": "civic",
+      "name": "Civic row",
+      "rect": [
+        26,
+        44,
+        54,
+        76
+      ]
+    },
+    {
       "id": "forest",
       "name": "Whispering forest",
       "rect": [
@@ -628,6 +638,198 @@
       ],
       "heading": 90,
       "prompt": "Back out to the marsh",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "school",
+      "at": [
+        32.0,
+        66.65
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        456.6
+      ],
+      "heading": 0,
+      "prompt": "Step into the schoolhouse",
+      "verb": "Enter"
+    },
+    {
+      "from": "school",
+      "level": "world",
+      "at": [
+        0,
+        455.35
+      ],
+      "radius": 1.15,
+      "spawn": [
+        32.0,
+        65.5
+      ],
+      "heading": 180,
+      "prompt": "Back out to the village",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "hospital",
+      "at": [
+        46.0,
+        66.65
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        516.6
+      ],
+      "heading": 0,
+      "prompt": "Step into the hospital",
+      "verb": "Enter"
+    },
+    {
+      "from": "hospital",
+      "level": "world",
+      "at": [
+        0,
+        515.35
+      ],
+      "radius": 1.15,
+      "spawn": [
+        46.0,
+        65.5
+      ],
+      "heading": 180,
+      "prompt": "Back out to the village",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "store",
+      "at": [
+        21.05,
+        78.8
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        577.1
+      ],
+      "heading": 0,
+      "prompt": "Step into the general store",
+      "verb": "Enter"
+    },
+    {
+      "from": "store",
+      "level": "world",
+      "at": [
+        0,
+        575.85
+      ],
+      "radius": 1.15,
+      "spawn": [
+        19.9,
+        78.8
+      ],
+      "heading": 90,
+      "prompt": "Back out to the village",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "boutique",
+      "at": [
+        -18.15,
+        79.1
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        637.1
+      ],
+      "heading": 0,
+      "prompt": "Step into the boutique",
+      "verb": "Enter"
+    },
+    {
+      "from": "boutique",
+      "level": "world",
+      "at": [
+        0,
+        635.85
+      ],
+      "radius": 1.15,
+      "spawn": [
+        -17.0,
+        79.1
+      ],
+      "heading": -90,
+      "prompt": "Back out to the village",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "firestation",
+      "at": [
+        27.7,
+        53.55
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        696.6
+      ],
+      "heading": 0,
+      "prompt": "Step into the fire station",
+      "verb": "Enter"
+    },
+    {
+      "from": "firestation",
+      "level": "world",
+      "at": [
+        0,
+        695.35
+      ],
+      "radius": 1.15,
+      "spawn": [
+        27.7,
+        54.7
+      ],
+      "heading": 0,
+      "prompt": "Back out to the village",
+      "verb": "Leave"
+    },
+    {
+      "from": "world",
+      "level": "police",
+      "at": [
+        44.0,
+        54.15
+      ],
+      "radius": 0.95,
+      "spawn": [
+        0,
+        757.1
+      ],
+      "heading": 0,
+      "prompt": "Step into the police station",
+      "verb": "Enter"
+    },
+    {
+      "from": "police",
+      "level": "world",
+      "at": [
+        0,
+        755.85
+      ],
+      "radius": 1.15,
+      "spawn": [
+        44.0,
+        55.3
+      ],
+      "heading": 0,
+      "prompt": "Back out to the village",
       "verb": "Leave"
     }
   ],
@@ -1540,6 +1742,227 @@
         0
       ],
       "h": 68.2
+    },
+    {
+      "file": "village/v_school.glb",
+      "at": [
+        32,
+        70,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        3.4,
+        2.4,
+        4.6
+      ],
+      "civic": "school",
+      "sign": {
+        "text": "School",
+        "at": [
+          0.0,
+          -2.56,
+          2.2
+        ],
+        "size": [
+          1.72,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_hospital.glb",
+      "at": [
+        46,
+        70,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        3.4,
+        2.4,
+        3.3
+      ],
+      "civic": "hospital",
+      "sign": {
+        "text": "Hospital",
+        "at": [
+          0.0,
+          -2.56,
+          2.2
+        ],
+        "size": [
+          1.92,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_store.glb",
+      "at": [
+        24,
+        80,
+        0
+      ],
+      "h": -90,
+      "solid": [
+        2.0,
+        2.5,
+        3.6
+      ],
+      "civic": "store",
+      "sign": {
+        "text": "General Store",
+        "at": [
+          0.0,
+          -2.16,
+          2.2
+        ],
+        "size": [
+          2.22,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_boutique.glb",
+      "at": [
+        -21,
+        78,
+        0
+      ],
+      "h": 90,
+      "solid": [
+        1.9,
+        2.3,
+        3.8
+      ],
+      "civic": "boutique",
+      "sign": {
+        "text": "Boutique",
+        "at": [
+          0.0,
+          -2.06,
+          2.2
+        ],
+        "size": [
+          2.02,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_firestation.glb",
+      "at": [
+        30,
+        50,
+        0
+      ],
+      "h": 180,
+      "solid": [
+        3.4,
+        2.6,
+        5.2
+      ],
+      "civic": "firestation",
+      "sign": {
+        "text": "Fire Station",
+        "at": [
+          -1.0,
+          -2.76,
+          2.2
+        ],
+        "size": [
+          2.42,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_police.glb",
+      "at": [
+        44,
+        51,
+        0
+      ],
+      "h": 180,
+      "solid": [
+        2.7,
+        2.2,
+        3.9
+      ],
+      "civic": "police",
+      "sign": {
+        "text": "Police",
+        "at": [
+          0.0,
+          -2.36,
+          2.2
+        ],
+        "size": [
+          1.82,
+          0.3
+        ]
+      }
+    },
+    {
+      "file": "village/v_firetruck.glb",
+      "at": [
+        31.1,
+        55.3,
+        0
+      ],
+      "h": 180,
+      "solid": [
+        0.78,
+        1.8,
+        1.9
+      ]
+    },
+    {
+      "file": "village/v_kitten.glb",
+      "at": [
+        33.6,
+        70.0,
+        3.72
+      ],
+      "h": 0,
+      "hide_if": {
+        "quest_done": "ember_kitten",
+        "has_item": "kitten"
+      }
+    },
+    {
+      "file": "village/v_lantern.glb",
+      "at": [
+        38.5,
+        66.8,
+        0
+      ],
+      "h": 0
+    },
+    {
+      "file": "village/v_bench.glb",
+      "at": [
+        39.2,
+        66.6,
+        0
+      ],
+      "h": 0,
+      "solid": [
+        0.5,
+        0.2,
+        0.42
+      ]
+    },
+    {
+      "file": "village/v_lantern.glb",
+      "at": [
+        37.2,
+        55.6,
+        0
+      ],
+      "h": 180
     }
   ]
 }

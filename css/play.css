@@ -1,5 +1,10 @@
 :root {
   color-scheme: dark;
+  /* Backing for HUD text drawn straight over the 3D view, so it reads on snow,
+     bright sky and night alike. */
+  --hud-backing: rgba(16, 12, 22, 0.58);
+  --hud-backing-hover: rgba(34, 26, 44, 0.72);
+  --hud-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 0 10px rgba(0, 0, 0, 0.35);
   --ink: #f6f0e6;
   --muted: #c4b3a0;
   --orange: #ff8a3d;
@@ -61,6 +66,18 @@ html, body {
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+#toolbar button,
+#actions button:not(#go) {
+  background: var(--hud-backing);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+  text-shadow: var(--hud-text-shadow);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+}
+#toolbar button:hover,
+#actions button:not(#go):hover { background: var(--hud-backing-hover); }
+#hud, #keys-hint, #toast, #bark, #quest-arrow, #sky-hud { text-shadow: var(--hud-text-shadow); }
 body.touch-layout #toolbar button {
   min-height: 46px;
   padding: 0 18px;
@@ -862,7 +879,7 @@ body.touch-layout #actions { display: flex; }
   z-index: 3;
   padding: 8px 12px;
   border-radius: 999px;
-  background: var(--glass);
+  background: var(--hud-backing);
   border: 1px solid var(--line);
   color: var(--muted);
   font-size: 12px;

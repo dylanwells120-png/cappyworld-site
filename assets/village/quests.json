@@ -304,6 +304,30 @@
         {"type": "collect", "item": "pastry"}
       ],
       "reward": {"coins": 30}
+    },
+    {
+      "id": "ember_kitten",
+      "title": "Kitten on the roof",
+      "giver": "ember",
+      "requires": ["yuzu_welcome"],
+      "intro": "A kitten called Mittens climbed onto the schoolhouse roof and won't come down. Grab the ladder by the door, set it against the school, and bring her back here.",
+      "outro": "Safe and sound! Pip says she is his — he has been looking everywhere. You are an honorary firefighter now.",
+      "steps": [
+        {"type": "collect", "item": "ladder"},
+        {"type": "collect", "item": "kitten"},
+        {"type": "deliver", "npc": "ember", "item": "kitten"}
+      ],
+      "reward": {"coins": 40, "flag": "honorary_firefighter"}
+    },
+    {
+      "id": "barley_locket",
+      "title": "Lost and found",
+      "giver": "barley",
+      "requires": ["yuzu_welcome"],
+      "intro": "Someone reported a silver locket lost near the river bridge on the west road. Find it and hand it in here so we can return it.",
+      "outro": "That is the one! Hana will be so happy. Thank you, Mochi — the village is lucky to have you.",
+      "steps": [{"type": "collect", "item": "locket"}, {"type": "deliver", "npc": "barley", "item": "locket"}],
+      "reward": {"coins": 35, "flag": "good_citizen"}
     }
   ]
 }
