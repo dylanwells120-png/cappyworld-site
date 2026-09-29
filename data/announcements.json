@@ -1,11 +1,26 @@
 {
   "announcements": [
     {
+      "id": "winter-snow",
+      "kind": "note",
+      "title": "Snow settles on the park",
+      "date": "September 28, 2026",
+      "featured": true,
+      "summary": "When it snows in winter, the ground and the rooftops slowly turn white, and the snow melts away again after it stops.",
+      "image": "gallery/winter-snow.jpg",
+      "imageAlt": "Mochi's home park under fresh snow, with white roofs on the cottage, cafe, bakery and market stall",
+      "body": [
+        "Snow no longer just falls past you. While it snows, a white layer builds up over a couple of minutes on the grass, on the roofs of every house and shop, on the station shelters and on the tops of trees and fences. Walls stay their usual colours, and the paths turn to grey slush where everyone walks.",
+        "When the snow stops, it melts away bit by bit. It lasts a long time on a cold winter day, goes faster in the sun and in the rain, and disappears quickly once spring comes. The river stays open the whole time.",
+        "Snow only falls in winter, so keep an eye on the sky display. In the shared park, everyone sees the same snow at the same moment."
+      ]
+    },
+    {
       "id": "broom-flight",
       "kind": "note",
       "title": "Fly the broom",
       "date": "September 28, 2026",
-      "featured": true,
+      "featured": false,
       "summary": "Broom flight is rebuilt as smooth arcade flying, and your capybara now sits astride the broom like a proper rider.",
       "image": "gallery/broom-flight.jpg",
       "imageAlt": "Mochi the capybara sitting astride the broom, flying low over the path by home",
