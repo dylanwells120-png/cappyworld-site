@@ -1018,3 +1018,123 @@ body.world-mode #sky-hud { display: none !important; }
     background: rgba(16, 10, 20, 0.92);
   }
 }
+
+/* Map window: Park / Globe tabs and the globe stage */
+#map-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--glass);
+}
+#map-tabs button {
+  min-width: 96px;
+  min-height: 40px;
+  padding: 8px 18px;
+  border-color: transparent;
+  background: transparent;
+}
+#map-tabs button.active {
+  background: var(--orange);
+  color: #1a0c10;
+}
+#map-globe {
+  position: relative;
+  flex-shrink: 0;
+  width: min(920px, 94vw);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: radial-gradient(circle at 50% 45%, #0c1430 0%, #04050b 70%);
+}
+#map-globe-canvas {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  height: min(640px, calc(100vh - 290px));
+  height: min(640px, calc(100dvh - 290px));
+  touch-action: none;
+  cursor: grab;
+  outline: none;
+}
+#map-globe-canvas:active { cursor: grabbing; }
+#map-globe-canvas:focus-visible { box-shadow: inset 0 0 0 2px var(--orange); }
+#map-globe-status {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  pointer-events: none;
+}
+#map-globe-nav {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#map-globe-nav button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  font-size: 18px;
+  background: var(--glass);
+  border: 1px solid var(--line);
+}
+#map-globe-nav #globe-earth { font-size: 13px; }
+.globe-tip {
+  position: absolute;
+  z-index: 3;
+  transform: translate(-50%, calc(-100% - 14px));
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(10, 8, 16, 0.82);
+  border: 1px solid rgba(255, 226, 150, 0.45);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+body.world-mode > .globe-tip { position: fixed; }
+#globe-card {
+  position: absolute;
+  z-index: 4;
+  left: 12px;
+  bottom: 12px;
+  width: min(320px, calc(100% - 84px));
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(14, 10, 18, 0.9);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+#globe-card h3 { margin: 4px 0 6px; font-size: 22px; letter-spacing: -0.02em; }
+#globe-card p { margin: 0 0 12px; max-width: none; font-size: 14px; color: var(--muted); }
+#globe-card .kicker { font-size: 11px; margin: 0; color: var(--orange); }
+#globe-card .row { flex-wrap: wrap; }
+#globe-card button { min-width: 0; flex: 1 1 auto; min-height: 44px; }
+#globe-go {
+  background: var(--orange);
+  color: #1a0c10;
+  border-color: transparent;
+}
+@media (max-width: 560px) {
+  #globe-card { right: 64px; width: auto; }
+  #map-globe-canvas { height: min(560px, 62vh); }
+}
+/* Landscape phones: drop the title and hint so the globe gets the height */
+@media (max-height: 560px) {
+  #map.sheet.globe-tab { gap: 8px; padding-top: calc(8px + env(safe-area-inset-top)); padding-bottom: calc(10px + env(safe-area-inset-bottom)); }
+  #map.globe-tab > h2,
+  #map.globe-tab > p { display: none; }
+  #map.globe-tab #map-globe-canvas { height: calc(100vh - 136px); height: calc(100dvh - 136px); min-height: 180px; }
+  #globe-card { padding: 10px 12px; }
+  #globe-card h3 { font-size: 18px; margin: 2px 0 4px; }
+  #globe-card p { margin-bottom: 8px; font-size: 13px; }
+}
