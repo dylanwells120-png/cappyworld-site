@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#0c0810">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=29">
+  <link rel="stylesheet" href="../css/play.css?v=30">
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -143,7 +143,7 @@
     <div id="dest-list" class="dest-list"></div>
     <button id="dest-close" type="button">Close</button>
   </div>
-  <div id="keys-hint">WASD move · drag to look · Space hop · F flop · E talk · Ride the broom by the yard</div>
+  <div id="keys-hint">WASD move · Shift or Run toggles running · drag to look · Space hop · F flop · E talk · Ride the broom by the yard</div>
   <div id="rotate">Turn the iPad sideways</div>
   <div id="controls" aria-hidden="true">
     <div id="touch-move" class="touch-zone" aria-label="Move"></div>
@@ -151,9 +151,10 @@
     <div id="actions">
       <button id="hop" type="button">Hop</button>
       <button id="flop" type="button">Flop</button>
+      <button id="run" type="button" aria-pressed="false">Run</button>
       <button id="go" type="button">Go</button>
     </div>
   </div>
-  <script src="../dist/game.js?v=64f40f9e3b"></script>
+  <script src="../dist/game.js?v=0bd825b9aa"></script>
 </body>
 </html>
