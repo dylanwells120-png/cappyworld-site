@@ -870,15 +870,15 @@ body:not(.touch-layout) #go { display: none; }
   font-size: 14px;
   touch-action: manipulation;
 }
-#go.ready {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 225, 168, 0.9), 0 10px 28px rgba(255, 138, 61, 0.35);
-}
 #actions #run.on,
 #actions #run.on:hover {
   background: var(--orange);
   color: #1a0c10;
   border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 225, 168, 0.9), 0 10px 28px rgba(255, 138, 61, 0.35);
+}
+#go.ready {
+  outline: none;
   box-shadow: 0 0 0 3px rgba(255, 225, 168, 0.9), 0 10px 28px rgba(255, 138, 61, 0.35);
 }
 #keys-hint {
@@ -1164,3 +1164,15 @@ body.world-mode > .globe-tip { position: fixed; }
   #globe-card h3 { font-size: 18px; margin: 2px 0 4px; }
   #globe-card p { margin-bottom: 8px; font-size: 13px; }
 }
+
+#dest-search {
+  width: min(360px, 92vw);
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+#dest-search.hidden { display: none; }
+#destination .dest-list { overflow-y: auto; max-height: 55vh; }
