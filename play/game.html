@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#0c0810">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=31">
+  <link rel="stylesheet" href="../css/play.css?v=32">
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -70,10 +70,15 @@
     <button id="character-back" type="button">Back</button>
   </div>
   <div id="dialogue" class="sheet hidden dialogue">
-    <div id="dialogue-tint"></div>
     <div id="dialogue-body">
-      <div id="dialogue-name"></div>
+      <div id="dialogue-kicker" class="hidden"></div>
+      <div id="dialogue-who">
+        <div id="dialogue-tint"></div>
+        <div id="dialogue-name"></div>
+      </div>
       <p id="dialogue-line"></p>
+      <div id="dialogue-goods" class="hidden"></div>
+      <div id="dialogue-you" class="hidden">You</div>
       <div id="dialogue-choices"></div>
     </div>
     <button id="dialogue-close" type="button">Close</button>
@@ -155,6 +160,6 @@
       <button id="go" type="button">Go</button>
     </div>
   </div>
-  <script src="../dist/game.js?v=309ed5c3dd"></script>
+  <script src="../dist/game.js?v=4b45fa7815"></script>
 </body>
 </html>

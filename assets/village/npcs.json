@@ -459,7 +459,8 @@
       "idle": ["Fresh bottles on the back shelves."],
       "barks": [
         {"text": "Welcome to the general store! Step up to the counter to shop."},
-        {"text": "I stock every brew from the manor, bottled fresh."}
+        {"text": "I stock every brew from the manor, bottled fresh."},
+        {"text": "If your purse is light, pocket the gold sparks outside. I'll pay for a straightened crate too."}
       ],
       "topics": [
         {
