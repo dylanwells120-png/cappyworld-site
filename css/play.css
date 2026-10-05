@@ -1390,3 +1390,44 @@ body:not(.touch-layout) #light-btn { display: none; }
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 240, 190, 0.9), 0 10px 28px rgba(255, 220, 120, 0.4);
 }
+/* Achievements sheet */
+#achievements.sheet {
+  justify-content: flex-start;
+  overflow: auto;
+  padding-top: calc(22px + env(safe-area-inset-top));
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+#ach-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  width: min(820px, 94vw);
+}
+.ach-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(22, 16, 28, 0.72);
+  text-align: left;
+  opacity: 0.78;
+}
+.ach-card.done {
+  opacity: 1;
+  border-color: rgba(255, 196, 90, 0.85);
+  background: rgba(48, 30, 14, 0.82);
+}
+.ach-icon { font-size: 30px; line-height: 1; flex: 0 0 auto; }
+.ach-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1 1 auto; }
+.ach-body strong { color: var(--ink); font-size: 14px; }
+.ach-body span { color: var(--muted); font-size: 12px; }
+.ach-body em { color: var(--muted); font-size: 11px; font-style: normal; font-weight: 700; }
+.ach-card.done .ach-body em { color: #ffc45a; }
+.ach-bar { height: 5px; border-radius: 999px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.ach-bar i { display: block; height: 100%; background: linear-gradient(90deg, #ffb070, var(--orange)); }
+.ach-card.done .ach-bar i { background: #ffc45a; }
+/* Move / Remove rows in the build sheet: keep the label and buttons side by side */
+#build-list .row { display: flex; flex-wrap: nowrap; gap: 8px; }
+#build-list .row > button { width: auto; }

@@ -2,6 +2,11 @@
   "announcements": [
     {
       "date": "2026-10-04",
+      "title": "Achievements and rewards",
+      "body": "Press K (or open Achievements from Pause or your bag) to see 20 goals with CappyCoin rewards. Plant, harvest, travel, fish, furnish a house, ride the train or broom, and more. Progress sticks in your save."
+    },
+    {
+      "date": "2026-10-04",
       "title": "China trip fix, look up at the sky, a bag and a flashlight",
       "body": "Traveling to China (and every other country) shows you and the HUD again. You can now tilt the camera up almost straight at the sky with the mouse, touch, or a gamepad, outdoors and indoors. Fish now swim in a village pond instead of lying on dry land (Mongolia gets a little steppe lake). Press I (or Bag) to see everything you carry, and F (or Light) for a flashlight at night. New players now start with 100 CappyCoin. Inside a house you bought, open Build to place, move, and remove furniture. The squirrel's eyes are a bit softer too."
     },

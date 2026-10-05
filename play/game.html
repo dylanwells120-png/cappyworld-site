@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#0c0810">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=36">
+  <link rel="stylesheet" href="../css/play.css?v=37">
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -114,6 +114,7 @@
     <button id="resume" type="button">Resume</button>
     <button id="pause-clothes" type="button">Clothes</button>
     <button id="pause-potions" type="button">Potions</button>
+    <button id="pause-achievements" type="button">Achievements</button>
     <button id="pause-save" type="button">Save code</button>
     
     <section id="pause-credits" class="credits-block">
@@ -153,7 +154,16 @@
       <p id="inv-detail"></p>
       <button id="inv-use" type="button" class="hidden">Use</button>
     </div>
-    <button id="inv-close" type="button">Close</button>
+    <div class="row">
+      <button id="inv-achievements" type="button">Achievements</button>
+      <button id="inv-close" type="button">Close</button>
+    </div>
+  </div>
+  <div id="achievements" class="sheet hidden" role="dialog" aria-label="Achievements">
+    <h2>Achievements</h2>
+    <p id="ach-summary"></p>
+    <div id="ach-list"></div>
+    <button id="ach-close" type="button">Close</button>
   </div>
   <div id="destination" class="sheet hidden">
     <h2>Where to?</h2>
@@ -161,7 +171,7 @@
     <div id="dest-list" class="dest-list"></div>
     <button id="dest-close" type="button">Close</button>
   </div>
-  <div id="keys-hint">WASD move · Shift or Run toggles running · drag to look · Space hop · Q flop · F flashlight · I bag · E talk · Ride the broom by the yard</div>
+  <div id="keys-hint">WASD move · Shift or Run toggles running · drag to look · Space hop · Q flop · F flashlight · I bag · K achievements · E talk · Ride the broom by the yard</div>
   <div id="rotate">Turn the iPad sideways</div>
   <div id="controls" aria-hidden="true">
     <div id="touch-move" class="touch-zone" aria-label="Move"></div>
@@ -174,6 +184,6 @@
       <button id="go" type="button">Go</button>
     </div>
   </div>
-  <script type="module" src="../dist/game.js?v=b185cacfbc"></script>
+  <script type="module" src="../dist/game.js?v=e76d6628d8"></script>
 </body>
 </html>
