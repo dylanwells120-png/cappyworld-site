@@ -1,6 +1,11 @@
 {
   "announcements": [
     {
+      "date": "2026-10-04",
+      "title": "China trip fix, furnish your house",
+      "body": "Traveling to China (and every other country) shows you and the HUD again. Inside a house you bought, open Build to place, move, and remove furniture. The squirrel's eyes are a bit softer too."
+    },
+    {
       "id": "homes-squirrel-credits",
       "kind": "note",
       "title": "Walk into your cottage",

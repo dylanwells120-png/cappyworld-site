@@ -1045,6 +1045,8 @@ body:not(.playing) #keys-hint { display: none; }
   font-weight: 600;
 }
 body.world-globe #toolbar { display: none !important; }
+#toolbar.world-hide { display: none !important; }
+body.world-mode #hud { display: flex; }
 body.world-mode #controls { opacity: 1; }
 body.world-mode.world-globe #controls { display: none; }
 
