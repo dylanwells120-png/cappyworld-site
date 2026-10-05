@@ -1,0 +1,1 @@
+var t=null;function n(r){t=r}function e(){return t}var o=null;async function d(){return o||(o=await import("./chunk-MDECMXM6.js")),n(o),o}function a(){return e()?.frameWorldMode??o?.frameWorldMode??null}async function p(){return(await d()).openWorldMode()}function u(){return(e()||o)?.worldInteract?.()??!1}export{n as a,d as b,a as c,p as d,u as e};
