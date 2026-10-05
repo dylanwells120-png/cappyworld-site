@@ -176,6 +176,12 @@ body.playing #toolbar { display: flex; }
   25% { transform: scale(1.12); color: #fff6c8; }
   100% { transform: scale(1); }
 }
+#supplies {
+  color: #f3e6c8;
+  font-size: 14px;
+  font-weight: 650;
+  margin-top: 2px;
+}
 #where {
   color: var(--orange);
   font-size: 13px;

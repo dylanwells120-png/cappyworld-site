@@ -1,11 +1,27 @@
 {
   "announcements": [
     {
+      "id": "farm-hills-animals",
+      "kind": "note",
+      "title": "Hills, a farm, and animal friends",
+      "date": "October 4, 2026",
+      "featured": true,
+      "summary": "The park has rolling hills, a farm you can till and harvest, pushable trees for wood, apple trees, chickens, a pet squirrel, and real capybara calls.",
+      "image": "gallery/farm-hills.jpg",
+      "imageAlt": "Mochi at the farm plots with chickens nearby in the rolling fields",
+      "body": [
+        "Walk out past the village and the ground rises into gentle hills while the square, roads, river and rails stay flat underfoot.",
+        "East of the square there is a farm. Buy pumpkin, carrot or wheat seeds from Maple or the seed stall, till a bed, plant, water, and harvest for CappyCoin. Growth follows the day and the season, and it pauses in winter or under heavy snow.",
+        "Trees on the hillsides can be pushed down for wood, and some grow apples you can pick. A flock of chickens wanders the farm and leave eggs. A squirrel can befriend you and follow along.",
+        "Hop, flop and quiet moments now play short field recordings of real capybaras, and the pause menu sound toggle still covers everything."
+      ]
+    },
+    {
       "id": "country-worlds-035",
       "kind": "note",
       "title": "Open country worlds and a Run toggle",
       "date": "October 3, 2026",
-      "featured": true,
+      "featured": false,
       "summary": "Version 0.3.5 lets you walk open terrain in each country, with local plants, animals, and a hamlet, and adds a Run toggle for a faster walk.",
       "body": [
         "Spin the globe in World and pick a country. You land in open terrain you can walk, with hills shaped from real elevation, plants and animals that fit the place, and a small hamlet of buildings. Afghanistan and Albania already have mapped buildings and roads; Algeria has buildings for now. The other countries are open country with a village, not a full capital street map.",
