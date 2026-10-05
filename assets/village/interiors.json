@@ -19,7 +19,7 @@
     },
     {
       "id": "cafe",
-      "name": "Caf\u00e9",
+      "name": "Café",
       "origin": [
         0,
         340
@@ -1712,7 +1712,7 @@
           "correct": 0
         },
         {
-          "q": "What is 3 \u00d7 4?",
+          "q": "What is 3 × 4?",
           "answers": [
             "7",
             "12",
@@ -1808,15 +1808,15 @@
           "price": 60
         },
         {
-          "seed": "pumpkin",
+          "item": "seed_pumpkin",
           "price": 12
         },
         {
-          "seed": "carrot",
+          "item": "seed_carrot",
           "price": 8
         },
         {
-          "seed": "wheat",
+          "item": "seed_wheat",
           "price": 6
         }
       ]
