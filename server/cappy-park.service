@@ -1,0 +1,24 @@
+[Unit]
+Description=CappyWorld park lobby (/mp API for the cappyworld site)
+After=network.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+ExecStart=/usr/bin/python3 /opt/cappy-park/park.py --host 127.0.0.1 --port 9201
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=multi-user.target
