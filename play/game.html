@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#0c0810">
   <title>CappyWorld</title>
-  <link rel="stylesheet" href="../css/play.css?v=35">
+  <link rel="stylesheet" href="../css/play.css?v=36">
 </head>
 <body>
   <canvas id="view"></canvas>
@@ -21,6 +21,7 @@
   </div>
   <div id="toolbar">
     <button id="build-btn" type="button">Build</button>
+    <button id="bag-btn" type="button" aria-keyshortcuts="I">Bag</button>
     <button id="quests-btn" type="button">Quests</button>
     <button id="map-btn" type="button">Map</button>
     <button id="pause" type="button">Pause</button>
@@ -119,6 +120,7 @@
       <h3>Credits</h3>
       <p>Capybara calls: Sidnei Dantas, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, <a href="https://www.inaturalist.org/observations/39058843" target="_blank" rel="noopener">iNaturalist 39058843</a>; Stan Rullman, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, <a href="https://www.inaturalist.org/observations/90187694" target="_blank" rel="noopener">iNaturalist 90187694</a>.</p>
       <p>Globe: NASA Blue Marble (public domain); country borders: Natural Earth (public domain).</p>
+      <p>Park music: “peacefull ville” by Bobjt, <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a>, <a href="https://opengameart.org/content/peacefull-ville" target="_blank" rel="noopener">OpenGameArt</a>; “Village of Snow” by Chris Murphy (zesona), <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a>, <a href="https://opengameart.org/content/village-of-snow" target="_blank" rel="noopener">OpenGameArt</a>.</p>
     </section>
     <p id="pause-version" class="version-tag"></p>
   </div>
@@ -144,13 +146,22 @@
     <div id="potion-list"></div>
     <button id="potions-back" type="button">Back</button>
   </div>
+  <div id="inventory" class="sheet hidden" role="dialog" aria-label="Inventory">
+    <h2>Inventory</h2>
+    <div id="inv-grid" role="listbox" aria-label="Items"></div>
+    <div id="inv-bar">
+      <p id="inv-detail"></p>
+      <button id="inv-use" type="button" class="hidden">Use</button>
+    </div>
+    <button id="inv-close" type="button">Close</button>
+  </div>
   <div id="destination" class="sheet hidden">
     <h2>Where to?</h2>
     <p>Pick a place you’ve discovered. The train follows the rails.</p>
     <div id="dest-list" class="dest-list"></div>
     <button id="dest-close" type="button">Close</button>
   </div>
-  <div id="keys-hint">WASD move · Shift or Run toggles running · drag to look · Space hop · F flop · E talk · Ride the broom by the yard</div>
+  <div id="keys-hint">WASD move · Shift or Run toggles running · drag to look · Space hop · Q flop · F flashlight · I bag · E talk · Ride the broom by the yard</div>
   <div id="rotate">Turn the iPad sideways</div>
   <div id="controls" aria-hidden="true">
     <div id="touch-move" class="touch-zone" aria-label="Move"></div>
@@ -159,9 +170,10 @@
       <button id="hop" type="button">Hop</button>
       <button id="flop" type="button">Flop</button>
       <button id="run" type="button" aria-pressed="false">Run</button>
+      <button id="light-btn" type="button" aria-pressed="false">Light</button>
       <button id="go" type="button">Go</button>
     </div>
   </div>
-  <script type="module" src="../dist/game.js?v=19be687e23"></script>
+  <script type="module" src="../dist/game.js?v=66e5faae8a"></script>
 </body>
 </html>

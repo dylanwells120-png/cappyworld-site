@@ -111,6 +111,24 @@
       ],
       "volume": 0.72,
       "cooldown": 0.3
+    },
+    {
+      "id": "music_park_day",
+      "bus": "music",
+      "files": [
+        "music/park_day.ogg"
+      ],
+      "volume": 0.42,
+      "loop": true
+    },
+    {
+      "id": "music_park_night",
+      "bus": "music",
+      "files": [
+        "music/park_night.ogg"
+      ],
+      "volume": 0.45,
+      "loop": true
     }
   ],
   "ambience": [],
@@ -119,11 +137,26 @@
       "id": "halloween",
       "sound": "music_halloween",
       "when": {
-        "event": [
-          "halloween"
+        "zone": [
+          "haunted"
         ]
       },
       "fade": 3
+    },
+    {
+      "id": "park_night",
+      "sound": "music_park_night",
+      "when": {
+        "tod": [
+          "night"
+        ]
+      },
+      "fade": 4
+    },
+    {
+      "id": "park_day",
+      "sound": "music_park_day",
+      "fade": 4
     }
   ]
 }
