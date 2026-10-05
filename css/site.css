@@ -321,3 +321,11 @@ h1, h2, h3 {
   .hero, .band, .gallery-grid { grid-template-columns: 1fr; }
   .site-header { align-items: flex-start; flex-direction: column; padding-top: 0.8rem; padding-bottom: 0.8rem; }
 }
+
+.site-credits {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+.site-credits a { color: inherit; text-decoration: underline; }

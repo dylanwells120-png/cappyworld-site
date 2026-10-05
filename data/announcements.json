@@ -1,11 +1,26 @@
 {
   "announcements": [
     {
+      "id": "homes-squirrel-credits",
+      "kind": "note",
+      "title": "Walk into your cottage",
+      "date": "October 4, 2026",
+      "featured": true,
+      "summary": "Bought houses open into a furnished room, the squirrel looks softer, and the pause menu credits the capybara call recordings.",
+      "image": "gallery/cottage-inside.jpg",
+      "imageAlt": "Inside a cottage with a bed, sofa, lamp and table",
+      "body": [
+        "After you build a cottage or another house on a plot, walk up to the door and step inside. Each one starts with a bed, sofa, table, rug and lamp. Snow stays outside, and the camera stays under the ceiling.",
+        "The pet squirrel has a rounder face, clearer eyes and a bushier tail so it sits better next to Mochi.",
+        "Pause shows a Credits section for the free capybara field recordings (Sidnei Dantas, CC BY-SA 4.0; Stan Rullman, CC BY 4.0) plus NASA Blue Marble and Natural Earth. The same notes are in the site footer."
+      ]
+    },
+    {
       "id": "farm-hills-animals",
       "kind": "note",
       "title": "Hills, a farm, and animal friends",
       "date": "October 4, 2026",
-      "featured": true,
+      "featured": false,
       "summary": "The park has rolling hills, a farm you can till and harvest, pushable trees for wood, apple trees, chickens, a pet squirrel, and real capybara calls.",
       "image": "gallery/farm-hills.jpg",
       "imageAlt": "Mochi at the farm plots with chickens nearby in the rolling fields",

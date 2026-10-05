@@ -1273,3 +1273,25 @@ body.world-mode > .globe-tip { position: fixed; }
 }
 #dest-search.hidden { display: none; }
 #destination .dest-list { overflow-y: auto; max-height: 55vh; }
+
+#pause-credits {
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(20, 10, 28, 0.45);
+  text-align: left;
+}
+#pause-credits h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f3e6c8;
+}
+#pause-credits p {
+  margin: 0 0 6px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #d7c4a8;
+}
+#pause-credits a { color: #ffb45c; }
